@@ -1,0 +1,3764 @@
+{
+    "TimeStamp": 1640006353,
+    "Coins": [{
+            "Id": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "Code": "ETH",
+            "EnName": "ethereum",
+            "CnName": "\u4ee5\u592a\u574a",
+            "Icon": "eth.png",
+            "AlgoId": "179b6892-29cb-4dd8-a9ea-24f2a726604b",
+            "Algo": "ethash",
+            "TestWallet": "0xEd44cF3679D627d3Cb57767EfAc1bdd9C9B8D143",
+            "WalletRegexPattern": "^0x\\w{40}$",
+            "JustAsDualCoin": false,
+            "Notice": "\u6316ETH\u81f3\u5c11\u9700\u89816G\u663e\u5b58\uff0c\u6bcf\u5f20\u663e\u5361\u81f3\u5c11\u5bf9\u5e946G\u865a\u62df\u5185\u5b58\uff0c\u6bd4\u59826\u5f20\u663e\u5361\u865a\u62df\u5185\u5b58\u81f3\u5c1136G\u3002",
+            "TutorialUrl": "https://blog.f2pool.com/zh/mining-tutorial/eth",
+            "IsHot": true,
+            "KernelBrand": "NVIDIA:fabece81-0911-459f-8403-5efc23c81d2a;AMD:fabece81-0911-459f-8403-5efc23c81d2a",
+            "SortNumber": 0,
+            "MinGpuMemoryGb": 6.0
+        }
+
+    ],
+    "Groups": [{
+            "Id": "36a4b870-fd52-4069-94f4-e475dbdc8309",
+            "Name": "BMiner\u6316ETH\u53cc\u6316CKB",
+            "SortNumber": 2
+        }, {
+            "Id": "6294cb4a-35de-4ca2-8567-117303e44c77",
+            "Name": "NBMiner\u6316ETH\u53cc\u6316CKB",
+            "SortNumber": 1
+        }, {
+            "Id": "c136a14f-96e4-49e2-84ed-76b7e3389cdb",
+            "Name": "NBMiner\u6316ETH\u53cc\u6316HNS",
+            "SortNumber": 4
+        }, {
+            "Id": "dee3c960-b437-4cad-966f-89ae2365d1c5",
+            "Name": "GMiner\u6316ETH\u53cc\u6316CKB",
+            "SortNumber": 3
+        }
+    ],
+    "CoinGroups": [
+    ],
+    "KernelInputs": [{
+            "Id": "45fe0830-15f8-4163-9df9-37d2f37b8440",
+            "Name": "lolminer new",
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "lolMiner.exe  --pool {pool} --user {wallet}.{worker} --pass x --apiport 10050 --log --logfile \"{logfile}\"",
+            "IsSupportDualMine": false,
+            "DualWeightMin": 0.0,
+            "DualWeightMax": 0.0,
+            "IsAutoDualWeight": false,
+            "IsDeviceAllNotEqualsNone": false,
+            "DevicesArg": "--devices",
+            "DeviceBaseIndex": 0,
+            "DevicesSeparator": ","
+        }, {
+            "Id": "5402ac48-c6dd-4491-afac-a2dd01420dc6",
+            "Name": "PhoenixMiner",
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "PhoenixMiner.exe -epool {pool} -ewal {wallet} -worker {worker} -pass x -logfile \"{logfile}\" -gbase 0 -pool2 {pool1}",
+            "IsSupportDualMine": false,
+            "DualWeightMin": 0.0,
+            "DualWeightMax": 0.0,
+            "IsAutoDualWeight": false,
+            "IsDeviceAllNotEqualsNone": false,
+            "DevicesArg": "-gpus",
+            "DeviceBaseIndex": 0
+        }, {
+            "Id": "6b671b31-28b9-4751-a0ba-9f83a0f887dd",
+            "Name": "GMiner",
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "miner.exe --server {host} --port {port} --user {wallet}.{worker} --logfile \"{logfile}\"",
+            "IsSupportDualMine": false,
+            "DualWeightMin": 0.0,
+            "DualWeightMax": 0.0,
+            "IsAutoDualWeight": true,
+            "IsDeviceAllNotEqualsNone": false,
+            "DevicesArg": "-d",
+            "DeviceBaseIndex": 0,
+            "DevicesSeparator": "space"
+        }, {
+            "Id": "741d1f78-596c-4139-84e4-253919a8fc23",
+            "Name": "t-rex",
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "t-rex -o stratum+tcp://{pool} -u {wallet}.{worker} -w {worker} --log-path \"{logfile}\"",
+            "IsSupportDualMine": false,
+            "DualWeightMin": 0.0,
+            "DualWeightMax": 0.0,
+            "IsAutoDualWeight": false,
+            "IsDeviceAllNotEqualsNone": false,
+            "DevicesArg": "-d",
+            "DeviceBaseIndex": 0,
+            "DevicesSeparator": ","
+        }, {
+            "Id": "85b08710-84c3-4612-8297-adba2bf9844b",
+            "Name": "lolMiner",
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "lolMiner.exe  --pool {host} --port {port} --user {wallet}.{worker} --pass x --apiport 10050 --logfile \"{logfile}\"",
+            "IsSupportDualMine": false,
+            "DualWeightMin": 0.0,
+            "DualWeightMax": 0.0,
+            "IsAutoDualWeight": false,
+            "IsDeviceAllNotEqualsNone": false,
+            "DevicesArg": "--devices",
+            "DeviceBaseIndex": 0,
+            "DevicesSeparator": ","
+        }, {
+            "Id": "9ccfa893-3637-4ea5-aa5a-b9766b054510",
+            "Name": "Claymore",
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "EthDcrMiner64.exe -epool {pool} -ewal {wallet} -epsw x -eworker {worker}  -logfile \"{logfile}\"",
+            "IsSupportDualMine": false,
+            "DualWeightMin": 30.0,
+            "DualWeightMax": 50.0,
+            "IsAutoDualWeight": true,
+            "DualWeightArg": "-dcri",
+            "IsDeviceAllNotEqualsNone": false,
+            "DevicesArg": "-di",
+            "DeviceBaseIndex": 0
+        }, {
+            "Id": "a8e1deb7-39f7-44b9-9458-018175814686",
+            "Name": "nanominer",
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "nanominer.exe config.ini",
+            "IsSupportDualMine": false,
+            "DualWeightMin": 0.0,
+            "DualWeightMax": 0.0,
+            "IsAutoDualWeight": false,
+            "IsDeviceAllNotEqualsNone": false,
+            "DeviceBaseIndex": 0
+        }, {
+            "Id": "e46a53ca-b893-4767-8227-f3aeea9d1333",
+            "Name": "teamredminer",
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "teamredminer.exe -u {wallet}.{worker} -p x --api_listen=0.0.0.0:4068 --log_file=\"{logfile}\"",
+            "IsSupportDualMine": false,
+            "DualWeightMin": 0.0,
+            "DualWeightMax": 0.0,
+            "IsAutoDualWeight": false,
+            "IsDeviceAllNotEqualsNone": false,
+            "DevicesArg": "-d",
+            "DeviceBaseIndex": 0,
+            "DevicesSeparator": ","
+        }, {
+            "Id": "fa9410c1-a79e-4f9e-977e-6f7d029b4dc6",
+            "Name": "NBMiner",
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "nbminer.exe -log-file \"{logfile}\"",
+            "IsSupportDualMine": false,
+            "DualWeightMin": 8.0,
+            "DualWeightMax": 24.0,
+            "IsAutoDualWeight": true,
+            "DualWeightArg": "-di",
+            "IsDeviceAllNotEqualsNone": false,
+            "DevicesArg": "-d",
+            "DeviceBaseIndex": 0,
+            "DevicesSeparator": ","
+        }
+    ],
+    "KernelOutputs": [{
+            "Id": "19a22e6e-eb5a-40e1-8824-81f1d745bb21",
+            "Name": "NBMiner",
+            "KernelRestartKeyword": "GPU Miner",
+            "IsDualInSameLine": false,
+            "TotalSpeedPattern": "\\|\\s*Total:\\s*(?<totalSpeed>[\\d\\.]+\\s*)(?<totalSpeedUnit>.+?)\\s*\\|",
+            "AcceptSharePattern": "\\|\\s*Total.*?\\|\\s*(?<acceptShare>[\\d\\.]+)",
+            "FoundOneShare": "#\\d+\\s+Share accepted,.*\\[DEVICE\\s+(?<gpu>\\d+)",
+            "RejectSharePattern": "\\|\\s*Total.*?\\|.*?\\|\\s*(?<rejectSahre>[\\d\\.]+)",
+            "GpuSpeedPattern": "INFO - \\|\\s*(?<gpu>\\d+)\\s*\\|.*?\\|\\s*(?<gpuSpeed>[\\d\\.]+)\\s*(?<gpuSpeedUnit>.+/s)\\s*\\|?",
+            "GpuAcceptShare": "INFO - \\|\\s*(?<gpu>\\d+)\\s*\\|.*?\\|.*?\\|\\s*(?<acceptShare>\\d+)\\|?",
+            "GpuRejectShare": "INFO - \\|\\s*(?<gpu>\\d+)\\s*\\|.*?\\|.*?\\|.*?\\|\\s*(?<rejectShare>\\d+)\\|?",
+            "GpuIncorrectShare": "INFO - \\|\\s*(?<gpu>\\d+)\\s*\\|.*?\\|.*?\\|.*?\\|.*?\\|\\s*(?<incorrectShare>\\d+)\\|?",
+            "PoolDelayPattern": "Share accepted, (?<poolDelay>\\d+ ms)",
+            "GpuBaseIndex": 0,
+            "IsMapGpuIndex": true
+        }, {
+            "Id": "2bd022f1-34e2-4ccc-b541-f821eaabd1eb",
+            "Name": "HSPMinerETH",
+            "KernelRestartKeyword": "Ready For",
+            "IsDualInSameLine": false,
+            "TotalSpeedPattern": "Total Speed: (?<totalSpeed>[\\d\\.]+) (?<totalSpeedUnit>.+/s)",
+            "AcceptSharePattern": "Accept Shares: (?<acceptShare>\\d+)",
+            "RejectSharePattern": "Rejected: (?<rejectShare>\\d+)",
+            "GpuSpeedPattern": "GPU(?<gpu>\\d+) (?<gpuSpeed>[\\d\\.]+) (?<gpuSpeedUnit>.+?/s)",
+            "PoolDelayPattern": "LATENCY (?<poolDelay>\\d+ms)",
+            "GpuBaseIndex": 0,
+            "IsMapGpuIndex": true
+        }, {
+            "Id": "4034409a-4b3a-4483-b557-a31c6ae2a5bc",
+            "Name": "nanominer",
+            "KernelRestartKeyword": "Common parameters:",
+            "IsDualInSameLine": false,
+            "TotalSpeedPattern": "Total speed: (?<totalSpeed>[\\d\\.]+)\\s+(?<totalSpeedUnit>.+/s)",
+            "TotalSharePattern": "Total shares: (?<totalShare>\\d+)",
+            "RejectSharePattern": "Rejected: (?<rejectShare>\\d+)",
+            "GpuSpeedPattern": "GPU\\s+(?<gpu>\\d+)\\s+(?<gpuSpeed>[\\d\\.]+)\\s+(?<gpuSpeedUnit>.+?/s)",
+            "PoolDelayPattern": "share accepted \\((?<poolDelay>\\d+ ms)\\)",
+            "GpuBaseIndex": 0,
+            "IsMapGpuIndex": false
+        }, {
+            "Id": "4f130e9f-995a-419d-ae59-f9a0027f6daf",
+            "Name": "Claymore",
+            "KernelRestartKeyword": "Claymore's Dual GPU Miner",
+            "IsDualInSameLine": false,
+            "TotalSpeedPattern": "Total Speed: (?<totalSpeed>[\\d\\.]+) (?<totalSpeedUnit>.+/s)",
+            "AcceptSharePattern": "Total Shares: (?<acceptShare>\\d+)",
+            "FoundOneShare": "SHARE FOUND - \\(GPU\\s?(?<gpu>\\d+)\\)",
+            "AcceptOneShare": "buf:.+(\"result\":true,.*\"id\":1(?<gpu>\\d+))|(\"id\":1(?<gpu>\\d+),.*\"result\":true)",
+            "RejectSharePattern": ", Rejected: (?<rejectShare>\\d+),",
+            "RejectOneShare": "buf:.+(\"result\":false,.*\"id\":1(?<gpu>\\d+))|(\"id\":1(?<gpu>\\d+),.*\"result\":false)",
+            "GpuSpeedPattern": "GPU(?<gpu>\\d+) (?<gpuSpeed>[\\d\\.]+) (?<gpuSpeedUnit>.+?/s)",
+            "GpuGotOneIncorrectShare": "GPU #(?<gpu>\\d+) got incorrect share",
+            "DualTotalSpeedPattern": "Total Speed: (?<totalSpeed>[\\d\\.]+) (?<totalSpeedUnit>.+/s)",
+            "DualAcceptSharePattern": "Total Shares: (?<acceptShare>\\d+)",
+            "DualRejectSharePattern": ", Rejected: (?<rejectShare>\\d+),",
+            "DualGpuSpeedPattern": "GPU(?<gpu>\\d+) (?<gpuSpeed>[\\d\\.]+) (?<gpuSpeedUnit>.+?/s)",
+            "PoolDelayPattern": "Share accepted \\((?<poolDelay>\\d+ ms)\\)",
+            "DualPoolDelayPattern": "Share accepted \\((?<poolDelay>\\d+ ms)\\)",
+            "GpuBaseIndex": 0,
+            "IsMapGpuIndex": true
+        }, {
+            "Id": "6bdff456-91bf-44e8-bdf8-03c72ab0fba2",
+            "Name": "serominer",
+            "KernelRestartKeyword": "serominer",
+            "IsDualInSameLine": false,
+            "TotalSpeedPattern": "A\\d+ (?<totalSpeed>[\\d\\.]+)",
+            "AcceptSharePattern": "A(?<acceptShare>\\d+)",
+            "RejectSharePattern": "R(?<rejectShare>\\d+)",
+            "GpuSpeedPattern": "(?:cl|cu)(?<gpu>\\d+) (?<gpuSpeed>[\\d\\.]+)",
+            "PoolDelayPattern": "Accepted (?<poolDelay>\\d+ ms)",
+            "SpeedUnit": "Mh/s",
+            "GpuBaseIndex": 0,
+            "IsMapGpuIndex": true
+        }, {
+            "Id": "9ce27eed-4d4f-442d-8792-f1183d7b0502",
+            "Name": "PhoenixMiner",
+            "KernelRestartKeyword": "Release build",
+            "IsDualInSameLine": false,
+            "TotalSpeedPattern": "speed: (?<totalSpeed>[\\d\\.]+) (?<totalSpeedUnit>.+?/s), shares",
+            "AcceptSharePattern": "speed: .+, shares: (?<acceptShare>\\d+)/",
+            "FoundOneShare": "GPU\\d+.*: GPU(?<gpu>\\d+):.*share found!",
+            "RejectSharePattern": "speed: .+, shares: \\d+/(?<rejectShare>\\d+)",
+            "RejectOneShare": "Share rejected in",
+            "GpuSpeedPattern": ": (?<gpuSpeed>[\\d\\.]+) (?<gpuSpeedUnit>.+?/s) \\(\\d+\\)?",
+            "GpuGotOneIncorrectShare": "Incorrect\\s+\\w+\\s+share\\s+from\\s+GPU(?<gpu>\\d+)",
+            "PoolDelayPattern": "Share accepted in (?<poolDelay>\\d+ ms)",
+            "GpuBaseIndex": 0,
+            "IsMapGpuIndex": true
+        }, {
+            "Id": "a2779719-5f22-4311-8f70-56d8338cdc9f",
+            "Name": "BMiner",
+            "KernelRestartKeyword": "When Crypto-mining Made Fast",
+            "IsDualInSameLine": true,
+            "TotalSpeedPattern": "Total (?<totalSpeed>[\\d\\.]+) (?<totalSpeedUnit>M?[hH]/s)",
+            "AcceptSharePattern": "Accepted shares (?<acceptShare>\\d+)",
+            "RejectSharePattern": "Rejected shares (?<rejectShare>\\d+)",
+            "GpuSpeedPattern": "\\[GPU (?<gpu>\\d+)\\] Speed: (?<gpuSpeed>[\\d\\.]+) (?<gpuSpeedUnit>M?[hH]/s)",
+            "DualTotalSpeedPattern": "Total .*, (?<totalSpeed>[\\d\\.]+) (?<totalSpeedUnit>M?[hH]/s)",
+            "DualAcceptSharePattern": "Accepted shares \\d+/(?<acceptShare>\\d+)",
+            "DualRejectSharePattern": "Rejected shares \\d+/(?<rejectShare>\\d+)",
+            "DualGpuSpeedPattern": "\\[GPU (?<gpu>\\d+)\\] Speed: .+, (?<gpuSpeed>[\\d\\.]+) (?<gpuSpeedUnit>M?[hH]/s)",
+            "GpuBaseIndex": 0,
+            "IsMapGpuIndex": true
+        }, {
+            "Id": "a5231bcc-4ec0-45eb-9856-9d5c4cfdbc3b",
+            "Name": "teamredminer",
+            "KernelRestartKeyword": "Team Red Miner version",
+            "IsDualInSameLine": false,
+            "TotalSpeedPattern": "Total\\s+.+?: (?<totalSpeed>[\\d\\.]+)(?<totalSpeedUnit>.+?/s),",
+            "AcceptSharePattern": "Total\\s+.+ a:(?<acceptShare>\\d+)",
+            "RejectSharePattern": "Total\\s+.+ r:(?<rejectShare>\\d+)",
+            "GpuSpeedPattern": "GPU\\s?(?<gpu>\\d+) .+ .+?: (?<gpuSpeed>[\\d\\.]+)\\s?(?<gpuSpeedUnit>.+?/s),",
+            "PoolDelayPattern": "share accepted.+ \\((?<poolDelay>.+ms)\\)",
+            "GpuBaseIndex": 0,
+            "IsMapGpuIndex": true
+        }, {
+            "Id": "d09f2011-e29c-4c84-9646-24022dbf681a",
+            "Name": "GMiner",
+            "KernelRestartKeyword": "GMiner v",
+            "IsDualInSameLine": true,
+            "TotalSpeedPattern": "\\|\\s+ (?<totalSpeed>[\\d\\.]+) (?<totalSpeedUnit>.+/s)",
+            "AcceptSharePattern": "\\|\\s+[\\d\\.]+ .+?/s\\s+[\\d\\.]*\\s+(?<acceptShare>\\d+)/.+\\|",
+            "AcceptOneShare": "GPU(?<gpu>\\d+): Share #\\d+ accepted \\d+ ms",
+            "RejectSharePattern": "\\|\\s+[\\d\\.]+ .+?/s\\s+(?:[\\d\\.]+\\s+)?\\d+/(?<rejectShare>\\d+).+\\|",
+            "RejectOneShare": "GPU(?<gpu>\\d+): Share #\\d+ rejected:",
+            "GpuSpeedPattern": "\\|\\s*(?:GPU)?(?<gpu>\\d+).+\\s+(?<gpuSpeed>[\\d\\.]+) (?<gpuSpeedUnit>.+?/s).*\\|",
+            "GpuAcceptShare": "\\|\\s*(?:GPU)?(?<gpu>\\d+)\\s*.*/s\\s*(?<acceptShare>\\d+)",
+            "GpuRejectShare": "\\|\\s*(?:GPU)?(?<gpu>\\d+)\\s*.*/s\\s*\\d+/(?<rejectShare>\\d+)",
+            "GpuIncorrectShare": "\\|\\s*(?:GPU)?(?<gpu>\\d+)\\s*.*/s\\s*\\d+/\\d+/(?<incorrectShare>\\d+)",
+            "DualAcceptSharePattern": "\\|\\s+[\\d\\.]+ .+?/s\\s+[\\d\\.]*.+\\+\\s(?<acceptShare>\\d+)/.+\\|",
+            "DualRejectSharePattern": "\\|\\s+[\\d\\.]+ .+?/s\\s+(?:[\\d\\.]+\\s+)?.+\\+\\s\\d+/(?<rejectShare>\\d+).+\\|",
+            "DualGpuSpeedPattern": "\\|\\s*GPU(?<gpu>\\d+).+?.+\\+\\s(?<gpuSpeed>[\\d\\.]+) (?<gpuSpeedUnit>.+?/s).*\\|",
+            "PoolDelayPattern": "Share\\s#\\d+\\saccepted (?<poolDelay>\\d+ ms)",
+            "GpuBaseIndex": 0,
+            "IsMapGpuIndex": false
+        }, {
+            "Id": "e48ba397-ddf1-4f65-aed7-53be77f90405",
+            "Name": "6miner",
+            "KernelRestartKeyword": "Initializing OpenCL",
+            "IsDualInSameLine": false,
+            "TotalSpeedPattern": "speed\\s10s:(?<totalSpeed>[\\d\\.]+)\\s(?<totalSpeedUnit>\\w+/s)",
+            "AcceptSharePattern": "accepted\\s\\((?<acceptShare>\\d+)/\\d+\\) diff",
+            "RejectSharePattern": "accepted\\s\\(\\d+/(?<rejectShare>\\d+)\\) diff",
+            "PoolDelayPattern": "accepted.*\\((?<poolDelay>\\d+ ms)\\)",
+            "GpuBaseIndex": 0,
+            "IsMapGpuIndex": false
+        }, {
+            "Id": "ebae16d3-2a7f-4073-b16f-708d51a9794a",
+            "Name": "t-rex",
+            "KernelRestartKeyword": "T-Rex NVIDIA GPU miner",
+            "IsDualInSameLine": false,
+            "TotalSharePattern": "\\d+/(?<totalShare>\\d+) - \\d+\\.?\\d* .+/s,",
+            "AcceptSharePattern": "(?<acceptShare>\\d+)/\\d+ - \\d+\\.?\\d* .+/s,",
+            "GpuSpeedPattern": "GPU #\\s?(?<gpu>\\d+): .* -\\s*(?<gpuSpeed>\\d+\\.?\\d*) (?<gpuSpeedUnit>.+/s),",
+            "PoolDelayPattern": ", (?<poolDelay>\\d+ms)",
+            "GpuBaseIndex": 0,
+            "IsMapGpuIndex": true
+        }, {
+            "Id": "fc20a704-02d7-453e-ad2b-8a67c645e501",
+            "Name": "lolminer",
+            "KernelRestartKeyword": "Made by Lolliedieb",
+            "IsDualInSameLine": false,
+            "TotalSpeedPattern": "Total: (?<totalSpeed>[\\d\\.]+)\\s+(?<totalSpeedUnit>.+/s)",
+            "AcceptOneShare": "Share accepted",
+            "RejectOneShare": "(Share rejected)|(GPU\\s?(?<gpu>\\d+).+\\nShare rejected)",
+            "GpuSpeedPattern": "[^l][\\:|]\\s(?<gpuSpeed>\\d+\\.?\\d*)(?<gpuSpeedUnit>.+?/s)",
+            "PoolDelayPattern": "Share accepted \\((?<poolDelay>\\d+ ms)\\)",
+            "GpuBaseIndex": 0,
+            "IsMapGpuIndex": true
+        }
+    ],
+    "KernelOutputTranslaters": [{
+            "Id": "0142ff4e-745f-45e6-9d47-a70f09d19033",
+            "KernelOutputId": "fc20a704-02d7-453e-ad2b-8a67c645e501",
+            "RegexPattern": "g/s",
+            "Replacement": "h/s",
+            "SortNumber": 2,
+            "IsPre": true
+        }, {
+            "Id": "2a156564-e591-484a-9ada-9de157c1682a",
+            "KernelOutputId": "19a22e6e-eb5a-40e1-8824-81f1d745bb21",
+            "RegexPattern": "(\\|\\s*Total:\\s*)(?<totalSpeedUnit>.+?)\\|",
+            "Replacement": "$1$2/s|",
+            "SortNumber": 1,
+            "IsPre": true
+        }, {
+            "Id": "6fabe912-07cb-4fe5-b35e-9384fd960826",
+            "KernelOutputId": "d09f2011-e29c-4c84-9646-24022dbf681a",
+            "RegexPattern": "G/s",
+            "Replacement": "H/s",
+            "SortNumber": 2,
+            "IsPre": true
+        }, {
+            "Id": "a76cbb40-b534-4865-8943-11fda71343e3",
+            "KernelOutputId": "a2779719-5f22-4311-8f70-56d8338cdc9f",
+            "RegexPattern": "G/s",
+            "Replacement": "h/s",
+            "SortNumber": 1,
+            "IsPre": true
+        }, {
+            "Id": "cd3a02a0-7619-422c-8889-fab33769ad6d",
+            "KernelOutputId": "a2779719-5f22-4311-8f70-56d8338cdc9f",
+            "RegexPattern": "Sol/s",
+            "Replacement": "h/s",
+            "SortNumber": 4,
+            "IsPre": true
+        }, {
+            "Id": "d5a66e18-92f2-4c00-aaac-d0ba91603147",
+            "KernelOutputId": "d09f2011-e29c-4c84-9646-24022dbf681a",
+            "RegexPattern": "Sol/s",
+            "Replacement": "H/s",
+            "SortNumber": 1,
+            "IsPre": true
+        }, {
+            "Id": "defcc4db-0810-43b8-8094-221822691725",
+            "KernelOutputId": "fc20a704-02d7-453e-ad2b-8a67c645e501",
+            "RegexPattern": "sol/s",
+            "Replacement": "h/s",
+            "SortNumber": 1,
+            "IsPre": true
+        }, {
+            "Id": "e00aa1cb-5a33-4213-83d0-cef154eeef98",
+            "KernelOutputId": "19a22e6e-eb5a-40e1-8824-81f1d745bb21",
+            "RegexPattern": "(INFO - \\|.*?\\|.*?\\|\\s*[\\d\\.]*\\s*)(?<totalSpeedUnit>.+?)\\|",
+            "Replacement": "$1$2/s|",
+            "SortNumber": 2,
+            "IsPre": true
+        }, {
+            "Id": "fbb9a9d4-24e2-4b6d-a549-f35080afc1bc",
+            "KernelOutputId": "a2779719-5f22-4311-8f70-56d8338cdc9f",
+            "RegexPattern": "H/s",
+            "Replacement": "h/s",
+            "SortNumber": 3,
+            "IsPre": true
+        }
+    ],
+    "Kernels": [
+        {
+            "Id": "63c64ee9-0cd3-44d9-8b60-4b0428c9221c",
+            "Code": "NBMiner",
+            "BrandId": "d53f9e6a-459e-4c10-a6c4-7af7cb97b9e9",
+            "Version": "40.1",
+            "PublishOn": 1637735371,
+            "Package": "NBMiner40.1.zip",
+            "Size": 11069692,
+            "PublishState": 0,
+            "KernelInputId": "fa9410c1-a79e-4f9e-977e-6f7d029b4dc6",
+            "KernelOutputId": "19a22e6e-eb5a-40e1-8824-81f1d745bb21"
+        }
+
+    ],
+    "Packages": [{
+            "Id": "0a859c0a-4c96-4a58-922b-3fcf745f6e76",
+            "Name": "teamredminer0.8.6.2.zip",
+            "AlgoIds": [
+                "179b6892-29cb-4dd8-a9ea-24f2a726604b",
+                "55f4cb2c-4a6a-4668-b0b2-4898e3edbf4c",
+                "f108e22c-54e7-47ef-bd34-99857f0f6f4b"
+            ]
+        }, {
+            "Id": "0c509e20-b525-4c7d-b408-bacb200dbe55",
+            "Name": "nanominer-3.3.2-cuda11.zip",
+            "AlgoIds": [
+                "f2776420-0d04-4fb7-963c-da945b51d4f4"
+            ]
+        }, {
+            "Id": "11af7bbe-eee7-4fdf-8f69-8eade1bb4dd0",
+            "Name": "PhoenixMiner5.7b.zip",
+            "AlgoIds": [
+                "179b6892-29cb-4dd8-a9ea-24f2a726604b",
+                "55f4cb2c-4a6a-4668-b0b2-4898e3edbf4c"
+            ]
+        }, {
+            "Id": "1fd9de04-e9e0-4aec-8320-a7bf152238aa",
+            "Name": "6miner0.0.5r3.zip",
+            "AlgoIds": [
+                "ee359432-5c22-490e-9883-204ffbb4621d"
+            ]
+        }, {
+            "Id": "32b7f416-e7c6-46c9-923b-d4830e391fac",
+            "Name": "ClaymoreMore2.4Cuda8.zip",
+            "AlgoIds": [
+                "179b6892-29cb-4dd8-a9ea-24f2a726604b"
+            ]
+        }, {
+            "Id": "339a62ab-9b15-482d-a4c1-a94035b1f0be",
+            "Name": "BMiner16.4.5.zip",
+            "AlgoIds": [
+                "179b6892-29cb-4dd8-a9ea-24f2a726604b",
+                "f108e22c-54e7-47ef-bd34-99857f0f6f4b",
+                "eb3966dd-0b56-43f3-8e05-0d12cc33e676",
+                "d45bbe1f-a7b0-4869-9426-6a3383cb8892",
+                "f2776420-0d04-4fb7-963c-da945b51d4f4"
+            ]
+        }, {
+            "Id": "3c1c3a9b-0f5e-495e-9bc4-efa516cf272c",
+            "Name": "ClaymoreMore2.6Cuda10.zip",
+            "AlgoIds": [
+                "179b6892-29cb-4dd8-a9ea-24f2a726604b"
+            ]
+        }, {
+            "Id": "43725cae-9e62-4ba5-9322-8dcda494e296",
+            "Name": "GMiner2.72.zip",
+            "AlgoIds": [
+                "179b6892-29cb-4dd8-a9ea-24f2a726604b",
+                "55f4cb2c-4a6a-4668-b0b2-4898e3edbf4c",
+                "f108e22c-54e7-47ef-bd34-99857f0f6f4b",
+                "d45bbe1f-a7b0-4869-9426-6a3383cb8892",
+                "f50edc1e-1c71-433c-977f-5ed4b76f629c",
+                "ceab5ad2-7c33-47bf-8ce7-de6d82c06a89",
+                "d7b84f93-6a31-4804-86cf-15882924de28"
+            ]
+        }, {
+            "Id": "46296e1a-baad-4fd2-b79b-afcdc748a059",
+            "Name": "ClaymoreMore2.6Cuda8.zip",
+            "AlgoIds": [
+                "179b6892-29cb-4dd8-a9ea-24f2a726604b"
+            ]
+        }, {
+            "Id": "5bd56233-e225-447f-aaba-b0588520a33b",
+            "Name": "nanominer-3.3.2.zip",
+            "AlgoIds": [
+                "f2776420-0d04-4fb7-963c-da945b51d4f4"
+            ]
+        }, {
+            "Id": "704f7805-cb04-4d90-b0f4-8bcdf7cdbea3",
+            "Name": "serominer0.3.0.zip",
+            "AlgoIds": [
+                "eb3966dd-0b56-43f3-8e05-0d12cc33e676"
+            ]
+        }, {
+            "Id": "713c18e1-05e6-4433-89b5-4799daac0925",
+            "Name": "teamredminer0.8.5.zip",
+            "AlgoIds": [
+                "179b6892-29cb-4dd8-a9ea-24f2a726604b",
+                "55f4cb2c-4a6a-4668-b0b2-4898e3edbf4c",
+                "f108e22c-54e7-47ef-bd34-99857f0f6f4b"
+            ]
+        }, {
+            "Id": "75d5310d-0507-4c8d-9f46-31b1c5a55348",
+            "Name": "NBMiner39.5.zip",
+            "AlgoIds": [
+                "179b6892-29cb-4dd8-a9ea-24f2a726604b",
+                "55f4cb2c-4a6a-4668-b0b2-4898e3edbf4c",
+                "f108e22c-54e7-47ef-bd34-99857f0f6f4b",
+                "eb3966dd-0b56-43f3-8e05-0d12cc33e676",
+                "bfbb917d-0b7a-48ba-a96f-6f38e66c4be5",
+                "f2776420-0d04-4fb7-963c-da945b51d4f4",
+                "d7b84f93-6a31-4804-86cf-15882924de28",
+                "ee359432-5c22-490e-9883-204ffbb4621d",
+                "445a9c33-d37f-49fd-acf9-42453a18ff5b"
+            ]
+        }, {
+            "Id": "76532955-40e6-457e-8474-519f74ed0515",
+            "Name": "nanominer3.3.7-cuda11.zip",
+            "AlgoIds": [
+                "f2776420-0d04-4fb7-963c-da945b51d4f4"
+            ]
+        }, {
+            "Id": "77f85df6-f281-47b2-89f5-52281e5835d3",
+            "Name": "teamredminer-v0.8.6.3.zip",
+            "AlgoIds": [
+                "179b6892-29cb-4dd8-a9ea-24f2a726604b",
+                "55f4cb2c-4a6a-4668-b0b2-4898e3edbf4c",
+                "f108e22c-54e7-47ef-bd34-99857f0f6f4b"
+            ]
+        }, {
+            "Id": "79d4c953-0e61-4660-b47c-0de4b0034693",
+            "Name": "PhoenixMiner5.6b.zip",
+            "AlgoIds": [
+                "179b6892-29cb-4dd8-a9ea-24f2a726604b",
+                "55f4cb2c-4a6a-4668-b0b2-4898e3edbf4c"
+            ]
+        }, {
+            "Id": "8666f160-d663-4417-8d97-6f4e7f73e3fa",
+            "Name": "NBMiner40.1.zip",
+            "AlgoIds": [
+                "179b6892-29cb-4dd8-a9ea-24f2a726604b",
+                "55f4cb2c-4a6a-4668-b0b2-4898e3edbf4c",
+                "f108e22c-54e7-47ef-bd34-99857f0f6f4b",
+                "eb3966dd-0b56-43f3-8e05-0d12cc33e676",
+                "bfbb917d-0b7a-48ba-a96f-6f38e66c4be5",
+                "f2776420-0d04-4fb7-963c-da945b51d4f4",
+                "d7b84f93-6a31-4804-86cf-15882924de28",
+                "ee359432-5c22-490e-9883-204ffbb4621d",
+                "445a9c33-d37f-49fd-acf9-42453a18ff5b"
+            ]
+        }, {
+            "Id": "8a4e729b-23a0-4991-911d-28e0cf748131",
+            "Name": "ClaymoreMore2.5Cuda10.zip",
+            "AlgoIds": [
+                "179b6892-29cb-4dd8-a9ea-24f2a726604b"
+            ]
+        }, {
+            "Id": "8f19459b-487b-4dd6-875b-5a66eee429e5",
+            "Name": "BMiner16.4.3.zip",
+            "AlgoIds": [
+                "179b6892-29cb-4dd8-a9ea-24f2a726604b",
+                "f108e22c-54e7-47ef-bd34-99857f0f6f4b",
+                "eb3966dd-0b56-43f3-8e05-0d12cc33e676",
+                "d45bbe1f-a7b0-4869-9426-6a3383cb8892",
+                "f2776420-0d04-4fb7-963c-da945b51d4f4"
+            ]
+        }, {
+            "Id": "97f2f6f3-146f-47c6-b47f-e9bbede403bc",
+            "Name": "t-rex-0.24.2.zip",
+            "AlgoIds": [
+                "179b6892-29cb-4dd8-a9ea-24f2a726604b",
+                "55f4cb2c-4a6a-4668-b0b2-4898e3edbf4c",
+                "f108e22c-54e7-47ef-bd34-99857f0f6f4b",
+                "bfbb917d-0b7a-48ba-a96f-6f38e66c4be5",
+                "f2776420-0d04-4fb7-963c-da945b51d4f4"
+            ]
+        }, {
+            "Id": "9c7bdc69-15bf-4eb3-a56a-941c7a80bb62",
+            "Name": "NBMiner39.6.zip",
+            "AlgoIds": [
+                "179b6892-29cb-4dd8-a9ea-24f2a726604b",
+                "55f4cb2c-4a6a-4668-b0b2-4898e3edbf4c",
+                "f108e22c-54e7-47ef-bd34-99857f0f6f4b",
+                "eb3966dd-0b56-43f3-8e05-0d12cc33e676",
+                "bfbb917d-0b7a-48ba-a96f-6f38e66c4be5",
+                "f2776420-0d04-4fb7-963c-da945b51d4f4",
+                "d7b84f93-6a31-4804-86cf-15882924de28",
+                "ee359432-5c22-490e-9883-204ffbb4621d",
+                "445a9c33-d37f-49fd-acf9-42453a18ff5b"
+            ]
+        }, {
+            "Id": "afab4a36-7d60-45fc-b384-04eed405a891",
+            "Name": "ClaymoreMore2.5Cuda8.zip",
+            "AlgoIds": [
+                "179b6892-29cb-4dd8-a9ea-24f2a726604b"
+            ]
+        }, {
+            "Id": "b3d125e3-cbec-43fd-a27b-9cbf5a7fdeb2",
+            "Name": "GMiner2.70.zip",
+            "AlgoIds": [
+                "179b6892-29cb-4dd8-a9ea-24f2a726604b",
+                "55f4cb2c-4a6a-4668-b0b2-4898e3edbf4c",
+                "f108e22c-54e7-47ef-bd34-99857f0f6f4b",
+                "d45bbe1f-a7b0-4869-9426-6a3383cb8892",
+                "f50edc1e-1c71-433c-977f-5ed4b76f629c",
+                "ceab5ad2-7c33-47bf-8ce7-de6d82c06a89",
+                "d7b84f93-6a31-4804-86cf-15882924de28"
+            ]
+        }, {
+            "Id": "b5a4fa38-67ee-4634-9709-9ab5e578d87c",
+            "Name": "BMiner16.4.4.zip",
+            "AlgoIds": [
+                "179b6892-29cb-4dd8-a9ea-24f2a726604b",
+                "f108e22c-54e7-47ef-bd34-99857f0f6f4b",
+                "eb3966dd-0b56-43f3-8e05-0d12cc33e676",
+                "d45bbe1f-a7b0-4869-9426-6a3383cb8892",
+                "f2776420-0d04-4fb7-963c-da945b51d4f4"
+            ]
+        }, {
+            "Id": "c02e4ec6-9dd7-4428-9131-729d48ea5d05",
+            "Name": "t-rex-0.24.5.zip",
+            "AlgoIds": [
+                "179b6892-29cb-4dd8-a9ea-24f2a726604b",
+                "55f4cb2c-4a6a-4668-b0b2-4898e3edbf4c",
+                "f108e22c-54e7-47ef-bd34-99857f0f6f4b",
+                "bfbb917d-0b7a-48ba-a96f-6f38e66c4be5",
+                "f2776420-0d04-4fb7-963c-da945b51d4f4"
+            ]
+        }, {
+            "Id": "c93513f8-f72b-4c01-b8d8-52dc5365fe9c",
+            "Name": "PhoenixMiner5.6d.zip",
+            "AlgoIds": [
+                "179b6892-29cb-4dd8-a9ea-24f2a726604b",
+                "55f4cb2c-4a6a-4668-b0b2-4898e3edbf4c"
+            ]
+        }, {
+            "Id": "ccfa7209-f380-4bf8-9f4b-8808c38fc703",
+            "Name": "lolminer1.35.zip",
+            "AlgoIds": [
+                "179b6892-29cb-4dd8-a9ea-24f2a726604b",
+                "55f4cb2c-4a6a-4668-b0b2-4898e3edbf4c",
+                "bfbb917d-0b7a-48ba-a96f-6f38e66c4be5",
+                "ceab5ad2-7c33-47bf-8ce7-de6d82c06a89"
+            ]
+        }, {
+            "Id": "ce1e21fc-e24d-42e6-b9d9-e8a615e90362",
+            "Name": "NBMiner39.4.zip",
+            "AlgoIds": [
+                "179b6892-29cb-4dd8-a9ea-24f2a726604b",
+                "55f4cb2c-4a6a-4668-b0b2-4898e3edbf4c",
+                "f108e22c-54e7-47ef-bd34-99857f0f6f4b",
+                "eb3966dd-0b56-43f3-8e05-0d12cc33e676",
+                "bfbb917d-0b7a-48ba-a96f-6f38e66c4be5",
+                "f2776420-0d04-4fb7-963c-da945b51d4f4",
+                "d7b84f93-6a31-4804-86cf-15882924de28",
+                "ee359432-5c22-490e-9883-204ffbb4621d",
+                "445a9c33-d37f-49fd-acf9-42453a18ff5b"
+            ]
+        }, {
+            "Id": "cf1820f3-aa36-4c29-8fa4-e5495be51aaa",
+            "Name": "PhoenixMiner_5.9b.zip",
+            "AlgoIds": [
+                "179b6892-29cb-4dd8-a9ea-24f2a726604b",
+                "55f4cb2c-4a6a-4668-b0b2-4898e3edbf4c"
+            ]
+        }, {
+            "Id": "cfb44bde-f739-4663-8941-f44657eb918c",
+            "Name": "PhoenixMiner5.9d.zip",
+            "AlgoIds": [
+                "179b6892-29cb-4dd8-a9ea-24f2a726604b",
+                "55f4cb2c-4a6a-4668-b0b2-4898e3edbf4c"
+            ]
+        }, {
+            "Id": "d2d49c32-24b2-4afe-898e-006cf2dda76e",
+            "Name": "BMiner16.4.6.zip",
+            "AlgoIds": [
+                "179b6892-29cb-4dd8-a9ea-24f2a726604b",
+                "f108e22c-54e7-47ef-bd34-99857f0f6f4b",
+                "eb3966dd-0b56-43f3-8e05-0d12cc33e676",
+                "d45bbe1f-a7b0-4869-9426-6a3383cb8892",
+                "f2776420-0d04-4fb7-963c-da945b51d4f4"
+            ]
+        }, {
+            "Id": "dd274b66-fd34-464c-921a-30e001d6a930",
+            "Name": "t-rex-0.24.7.zip",
+            "AlgoIds": [
+                "179b6892-29cb-4dd8-a9ea-24f2a726604b",
+                "55f4cb2c-4a6a-4668-b0b2-4898e3edbf4c",
+                "f108e22c-54e7-47ef-bd34-99857f0f6f4b",
+                "bfbb917d-0b7a-48ba-a96f-6f38e66c4be5",
+                "f2776420-0d04-4fb7-963c-da945b51d4f4"
+            ]
+        }, {
+            "Id": "e3a3111e-da11-48ea-b048-15bed8a11510",
+            "Name": "lolminer1.36.zip",
+            "AlgoIds": [
+                "179b6892-29cb-4dd8-a9ea-24f2a726604b",
+                "55f4cb2c-4a6a-4668-b0b2-4898e3edbf4c",
+                "bfbb917d-0b7a-48ba-a96f-6f38e66c4be5",
+                "ceab5ad2-7c33-47bf-8ce7-de6d82c06a89"
+            ]
+        }, {
+            "Id": "e511069f-b563-4ddc-bf77-6e031282e295",
+            "Name": "ClaymoreMore2.7.zip",
+            "AlgoIds": [
+                "179b6892-29cb-4dd8-a9ea-24f2a726604b"
+            ]
+        }, {
+            "Id": "e9489b8f-b83c-4c42-8fd7-f4fd59241e48",
+            "Name": "GMiner2.71.zip",
+            "AlgoIds": [
+                "179b6892-29cb-4dd8-a9ea-24f2a726604b",
+                "55f4cb2c-4a6a-4668-b0b2-4898e3edbf4c",
+                "f108e22c-54e7-47ef-bd34-99857f0f6f4b",
+                "d45bbe1f-a7b0-4869-9426-6a3383cb8892",
+                "f50edc1e-1c71-433c-977f-5ed4b76f629c",
+                "ceab5ad2-7c33-47bf-8ce7-de6d82c06a89",
+                "d7b84f93-6a31-4804-86cf-15882924de28"
+            ]
+        }, {
+            "Id": "f08b0d6a-86f7-460d-b1f1-098ba9c8437c",
+            "Name": "GMiner2.74.zip",
+            "AlgoIds": [
+                "179b6892-29cb-4dd8-a9ea-24f2a726604b",
+                "55f4cb2c-4a6a-4668-b0b2-4898e3edbf4c",
+                "f108e22c-54e7-47ef-bd34-99857f0f6f4b",
+                "d45bbe1f-a7b0-4869-9426-6a3383cb8892",
+                "f50edc1e-1c71-433c-977f-5ed4b76f629c",
+                "ceab5ad2-7c33-47bf-8ce7-de6d82c06a89",
+                "d7b84f93-6a31-4804-86cf-15882924de28"
+            ]
+        }, {
+            "Id": "f80b799a-56a7-43af-95ca-20c8788f8aa7",
+            "Name": "lolminer1.38.zip",
+            "AlgoIds": [
+                "179b6892-29cb-4dd8-a9ea-24f2a726604b",
+                "55f4cb2c-4a6a-4668-b0b2-4898e3edbf4c",
+                "bfbb917d-0b7a-48ba-a96f-6f38e66c4be5",
+                "ceab5ad2-7c33-47bf-8ce7-de6d82c06a89"
+            ]
+        }, {
+            "Id": "f96698c0-8100-438d-afa0-e59c48086459",
+            "Name": "nanominer3.3.7.zip",
+            "AlgoIds": [
+                "f2776420-0d04-4fb7-963c-da945b51d4f4"
+            ]
+        }, {
+            "Id": "fca7eae2-2ebd-467c-9fec-2892c7ed87f8",
+            "Name": "PhoenixMiner_5.8c.zip",
+            "AlgoIds": [
+                "179b6892-29cb-4dd8-a9ea-24f2a726604b",
+                "55f4cb2c-4a6a-4668-b0b2-4898e3edbf4c"
+            ]
+        }, {
+            "Id": "fd63e4eb-7a7a-46fd-89e6-2157a2c458f4",
+            "Name": "NBMiner39.7.zip",
+            "AlgoIds": [
+                "179b6892-29cb-4dd8-a9ea-24f2a726604b",
+                "55f4cb2c-4a6a-4668-b0b2-4898e3edbf4c",
+                "f108e22c-54e7-47ef-bd34-99857f0f6f4b",
+                "eb3966dd-0b56-43f3-8e05-0d12cc33e676",
+                "bfbb917d-0b7a-48ba-a96f-6f38e66c4be5",
+                "f2776420-0d04-4fb7-963c-da945b51d4f4",
+                "d7b84f93-6a31-4804-86cf-15882924de28",
+                "ee359432-5c22-490e-9883-204ffbb4621d",
+                "445a9c33-d37f-49fd-acf9-42453a18ff5b"
+            ]
+        }
+    ],
+    "CoinKernels": [{
+            "Id": "0208c16b-8746-48d3-907b-15af15ac42cb",
+            "CoinId": "38d6061f-eb37-4639-aa33-45dd25abff3f",
+            "KernelId": "5487725f-9260-4f11-8f42-4e42fa8b632e",
+            "SupportedGpu": 0,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a kawpow -p c=RVN",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 2
+        }, {
+            "Id": "02f3250c-4ebb-45f6-8430-df18556ed91c",
+            "CoinId": "6b20450b-5973-40e7-a4c2-93d23cb2a383",
+            "KernelId": "2ff3c24f-59f8-4c4b-b856-87be42171b0a",
+            "SupportedGpu": 1,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a etchash -o stratum+tcp://{pool}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "02ff653f-d85f-44ce-895e-bccf3d06937f",
+            "CoinId": "38d6061f-eb37-4639-aa33-45dd25abff3f",
+            "KernelId": "65d7bd94-a64c-46a4-ba20-f00e648c91a4",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a kawpow -o stratum+tcp://{pool} -long-format -u {wallet}.{worker}",
+            "Notice": "\u652f\u6301RVN\u5206\u53c9\u65b0\u7b97\u6cd5\uff0c\u6ce8\u610f6\u53f7\u540e\u4f7f\u7528\u3002",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "03be3384-b972-4d51-806d-5f0512ca3969",
+            "CoinId": "8fd4d8ce-757c-49e9-afcf-73c51fd134a1",
+            "KernelId": "69888324-c9f0-4c14-8128-20e3cfdced24",
+            "SupportedGpu": 0,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0,
+            "FileWriterIds": [
+                "e27220a9-49c0-43c9-9ae5-1fd9b969f65c"
+            ]
+        }, {
+            "Id": "08078c6a-b636-495e-8c8d-0c75da85a036",
+            "CoinId": "9ea5a2f8-c3c5-4f86-a119-904ad076e012",
+            "KernelId": "cb2143fe-5af2-49e1-8dee-d42c9594670a",
+            "SupportedGpu": 0,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a autolykos2",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "091d47fd-e7aa-4487-bce5-a37122a5531c",
+            "CoinId": "8fd4d8ce-757c-49e9-afcf-73c51fd134a1",
+            "KernelId": "406d2754-31d5-4401-80bc-ac6459ed33f0",
+            "SupportedGpu": 0,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0,
+            "FileWriterIds": [
+                "e27220a9-49c0-43c9-9ae5-1fd9b969f65c"
+            ]
+        }, {
+            "Id": "0a58721f-3548-4847-8097-8f8a4424869c",
+            "CoinId": "6b20450b-5973-40e7-a4c2-93d23cb2a383",
+            "KernelId": "b6572da1-b5c0-4892-a71f-80d85cebce9d",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-coin etc",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "12762a4a-3c78-41a5-b194-28d649e3ccf6",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "KernelId": "5487725f-9260-4f11-8f42-4e42fa8b632e",
+            "SupportedGpu": 0,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a ethash -p c=ETH",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "15f0532c-73b4-4a67-80ec-b97fdf0deebf",
+            "CoinId": "38d6061f-eb37-4639-aa33-45dd25abff3f",
+            "KernelId": "9e79ac9f-4e8f-49f3-af61-b92171d477b3",
+            "SupportedGpu": 0,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a kawpow -p c=RVN",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 5
+        }, {
+            "Id": "173846e2-d832-4fdc-8f74-322221bd549c",
+            "CoinId": "8fd4d8ce-757c-49e9-afcf-73c51fd134a1",
+            "KernelId": "cb2143fe-5af2-49e1-8dee-d42c9594670a",
+            "SupportedGpu": 0,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a octopus -p c=CFX",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "1b09b822-e808-4fa7-9c4c-48bcbf75c5b0",
+            "CoinId": "38d6061f-eb37-4639-aa33-45dd25abff3f",
+            "KernelId": "8253d1a5-5fb6-472b-b522-2addf9205d27",
+            "SupportedGpu": 1,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a kawpow -o stratum+tcp://{pool}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 11
+        }, {
+            "Id": "1d02d08c-06aa-40b8-b9d2-906eed082342",
+            "CoinId": "6b20450b-5973-40e7-a4c2-93d23cb2a383",
+            "KernelId": "512fb031-3157-44e9-bf7d-8426af79b608",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "--algo etchash",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "1d95358d-6829-4556-b13b-443c89d49876",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "KernelId": "dcb1b5f0-2e51-4bb5-aa93-30e36a120d37",
+            "SupportedGpu": 2,
+            "IsSupportPool1": true,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-coin eth",
+            "IsHot": false,
+            "IsRecommend": true,
+            "SortNumber": 0,
+            "InputSegments": [{
+                    "TargetGpu": 2,
+                    "Name": "-rxboost 1",
+                    "Segment": "-rxboost 1",
+                    "Description": "\u53ef\u4ee5\u63d0\u9ad8\u4e00\u70b9\u7b97\u529b\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 2,
+                    "Name": "-straps 1",
+                    "Segment": "-straps 1",
+                    "Description": "\u65f6\u5e8f1\u53f7\uff0c\u53ef\u63d0\u9ad8\u7b97\u529b\uff0c\u53ef\u624b\u52a8\u5c061\u6539\u4e3a2\u62163\u7b97\u529b\u66f4\u9ad8\u4f46\u4e0d\u4e00\u5b9a\u7a33\u5b9a\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 2,
+                    "Name": "-mi 14",
+                    "Segment": "-mi 14",
+                    "Description": "\u6316\u77ff\u5f3a\u5ea6\uff0c\u53d6\u503c0\u523014\uff0c\u4e0d\u52fe\u9009\u65f6\u9ed8\u8ba4\u662f12\uff0c\u53ef\u624b\u52a8\u57280\u523014\u95f4\u8c03\u6574\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 1,
+                    "Name": "-amd",
+                    "Segment": "-amd",
+                    "Description": "\u53ea\u4f7f\u7528A\u5361",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 1,
+                    "Name": "-clKernel 3",
+                    "Segment": "-clKernel 3",
+                    "Description": "\u4ec5\u9002\u7528\u4e8eRX470/570/480/580",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "-nvdo 1",
+                    "Segment": "-nvdo 1",
+                    "Description": "\u9488\u5bf9NVIDIA\u9a71\u52a8\u4f18\u5316",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "-nvidia",
+                    "Segment": "-nvidia",
+                    "Description": "\u53ea\u4f7f\u7528N\u5361\uff0c\u7528\u4e8e\u544a\u8bc9\u5185\u6838\u522b\u4f7f\u7528\u96c6\u663e\u6316\u77ff\u3002",
+                    "IsDefault": false
+                }
+            ]
+        }, {
+            "Id": "20da4323-6f28-43e3-8f2a-0f1b97cc25e6",
+            "CoinId": "6b20450b-5973-40e7-a4c2-93d23cb2a383",
+            "KernelId": "5487725f-9260-4f11-8f42-4e42fa8b632e",
+            "SupportedGpu": 0,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a etchash -p c=ETC",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "244f6952-fe5f-4bc6-9af4-9900bbdeacb7",
+            "CoinId": "6b20450b-5973-40e7-a4c2-93d23cb2a383",
+            "KernelId": "63c64ee9-0cd3-44d9-8b60-4b0428c9221c",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a etchash -o stratum+ssl://{pool} -u {wallet}.{worker}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "2ac1fe00-f26f-45e8-bbd7-9f2047ef3580",
+            "CoinId": "38d6061f-eb37-4639-aa33-45dd25abff3f",
+            "KernelId": "cb2143fe-5af2-49e1-8dee-d42c9594670a",
+            "SupportedGpu": 0,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a kawpow -p c=RVN",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 8
+        }, {
+            "Id": "2ac865fa-caf1-4a65-aef2-d974debb6a33",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "KernelId": "2e65cd20-0a89-461b-9df3-eabe1f173f28",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-eres 0",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0,
+            "InputSegments": [{
+                    "TargetGpu": 1,
+                    "Name": "-asm 2",
+                    "Segment": "-asm 2",
+                    "Description": "\u542f\u7528\u6c47\u7f16\u5185\u6838\uff0c\u53ef\u4ee5\u63d0\u9ad8A\u5361\u7b97\u529b\u3002",
+                    "IsDefault": true
+                }, {
+                    "TargetGpu": 2,
+                    "Name": "-platform 1",
+                    "Segment": "-platform 1",
+                    "Description": "\u53ea\u4f7f\u7528A\u5361",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 2,
+                    "Name": "-platform 2",
+                    "Segment": "-platform 2",
+                    "Description": "\u53ea\u4f7f\u7528N\u5361",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 1,
+                    "Name": "-rxboost 1",
+                    "Segment": "-rxboost 1",
+                    "Description": "\u53ef\u63d0\u9ad8A\u5361\u7b97\u529b",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 2,
+                    "Name": "-strap 1",
+                    "Segment": "-strap 1",
+                    "Description": "\u53ef\u63d0\u5347N\u5361\u548cA\u5361\u7b97\u529b\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 1,
+                    "Name": "-y 1",
+                    "Segment": "-y 1",
+                    "Description": "\u542f\u7528\u8ba1\u7b97\u6a21\u5f0f\uff0c\u7981\u7528\u4ea4\u706b\u6a21\u5f0f\uff0c\u53ef\u4ee5\u8282\u7701\u4e00\u70b9\u529f\u8017\u3002",
+                    "IsDefault": true
+                }
+            ]
+        }, {
+            "Id": "2dd54a3c-3690-49d3-9262-f18e9d248fa1",
+            "CoinId": "6b20450b-5973-40e7-a4c2-93d23cb2a383",
+            "KernelId": "0c9d6314-9a95-422c-9bba-0eb3221b4c56",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-coin etc",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0,
+            "InputSegments": [{
+                    "TargetGpu": 2,
+                    "Name": "-rxboost 1",
+                    "Segment": "-rxboost 1",
+                    "Description": "\u53ef\u4ee5\u63d0\u9ad8\u4e00\u70b9\u7b97\u529b\u3002",
+                    "IsDefault": false
+                }
+            ]
+        }, {
+            "Id": "32bee612-a0b7-4ffd-999c-f37a37affe43",
+            "CoinId": "38d6061f-eb37-4639-aa33-45dd25abff3f",
+            "KernelId": "512fb031-3157-44e9-bf7d-8426af79b608",
+            "SupportedGpu": 0,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "--algo kawpow",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "33d55aa8-08ab-4150-a09b-ed9152d97ec3",
+            "CoinId": "6b20450b-5973-40e7-a4c2-93d23cb2a383",
+            "KernelId": "eb24f21b-687f-4122-b935-37c11afa266e",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "--algo ETCHASH",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "355f453e-ab9a-42d1-b401-5b803921dcd5",
+            "CoinId": "6b20450b-5973-40e7-a4c2-93d23cb2a383",
+            "KernelId": "ff514618-f6a7-44ea-9088-20009659ddbd",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-coin etc",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0,
+            "InputSegments": [{
+                    "TargetGpu": 2,
+                    "Name": "-rxboost 1",
+                    "Segment": "-rxboost 1",
+                    "Description": "\u53ef\u4ee5\u63d0\u9ad8\u4e00\u70b9\u7b97\u529b\u3002",
+                    "IsDefault": false
+                }
+            ]
+        }, {
+            "Id": "37783f3c-cea6-4110-af72-5b69f3398b72",
+            "CoinId": "8fd4d8ce-757c-49e9-afcf-73c51fd134a1",
+            "KernelId": "066acc03-7732-407f-8c98-8af96099fd67",
+            "SupportedGpu": 0,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0,
+            "FileWriterIds": [
+                "e27220a9-49c0-43c9-9ae5-1fd9b969f65c"
+            ]
+        }, {
+            "Id": "3dd3f5f5-72ad-45d2-b9d7-0dbaa8e3d6bd",
+            "CoinId": "8fd4d8ce-757c-49e9-afcf-73c51fd134a1",
+            "KernelId": "a89caa3e-f0dc-403b-8e35-ccd2b217f4e9",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a octopus -o stratum+tcp://{pool} -u {wallet}.{worker}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "3fd96647-52b9-4e71-8ea5-dfa034af141e",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "KernelId": "63c64ee9-0cd3-44d9-8b60-4b0428c9221c",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a ethash -o stratum+ssl://{pool} -u {wallet}.{worker}",
+            "DualFullArgs": "nbminer.exe -log-file \"{logfile}\" -a hns_ethash -o stratum+ssl://{dualPool} -u {dualWallet}.{worker} -do stratum+ssl://{pool} -du {wallet}.{worker}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 28,
+            "InputSegments": [{
+                    "TargetGpu": 0,
+                    "Name": "-proxy",
+                    "Segment": "-proxy=127.0.0.1:12808",
+                    "Description": "\u5185\u6838\u4f7f\u7528\u0053\u006f\u0063\u006b\u0065\u0074\u0035\u4ee3\u7406\u8fde\u63a5",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 2,
+                    "Name": "-mt 6",
+                    "Segment": "-mt 6",
+                    "Description": "\u5c1d\u8bd5\u81ea\u52a8\u8c03\u65f6\u5e8f\u4ee5\u52a0\u901f\u7b97\u529b\uff0c\u9ed8\u8ba4\u53d6\u503c6\u8868\u793a\u6700\u9ad8\u7b97\u529b\uff0c\u53ef\u624b\u52a8\u57281-6\u4e4b\u95f4\u8c03\u6574\u53d6\u503c\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "-lhr 69",
+                    "Segment": "-lhr 69",
+                    "Description": "\u6570\u503c\u8d8a\u5927\uff0c\u6316\u77ff\u8fc7\u7a0b\u4e2d\u88ab\u9501\u7b97\u529b\u7684\u6982\u7387\u8d8a\u5927\uff0c\u9ed8\u8ba4\u503c 69 \u662f\u5f00\u53d1\u6d4b\u8bd5\u4e2d\u53ef\u4ee5\u957f\u671f\u7a33\u5b9a\u8fd0\u884c\u7684\u503c\uff0c\u7528\u6237\u53ef\u4ee5\u5c1d\u8bd5\u8c03\u9ad8\u6216\u8005\u8c03\u4f4e\u8be5\u6570\u503c\uff0c\u4ee5\u53d6\u5f97\u7b97\u529b\u548c\u7a33\u5b9a\u6027\u7684\u5e73\u8861",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "-lhr-mode 2",
+                    "Segment": "-lhr-mode 2",
+                    "Description": "\u4f4e\u529f\u8017\u6a21\u5f0f",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "-lhr-mode 1",
+                    "Segment": "-lhr-mode 1",
+                    "Description": "\u9002\u7528\u4e8e\u8ffd\u6c42\u66f4\u9ad8\u7b97\u529b\uff0c\u9501\u529f\u8017\u4e0d\u9501\u6838\u5fc3\u9891\u7387\u7684\u663e\u5361",
+                    "IsDefault": false
+                }
+            ],
+            "FragmentWriterIds": [
+                "9d7ea7d8-e6df-4977-9dde-502e7884ad53"
+            ]
+        }, {
+            "Id": "41a6f4c3-f4d4-4324-a5b6-72bbd73de653",
+            "CoinId": "8fd4d8ce-757c-49e9-afcf-73c51fd134a1",
+            "KernelId": "9e79ac9f-4e8f-49f3-af61-b92171d477b3",
+            "SupportedGpu": 0,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a octopus -p c=CFX",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "46b7e82a-1f65-4b96-9890-d230800908ab",
+            "CoinId": "6b20450b-5973-40e7-a4c2-93d23cb2a383",
+            "KernelId": "a4d55942-d8ec-437a-a05f-c711cf5ef5c0",
+            "SupportedGpu": 2,
+            "IsSupportPool1": true,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a etchash -o stratum+ssl://{pool} -u {wallet}.{worker}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 13
+        }, {
+            "Id": "48ae2fc3-9ddf-4224-a83c-8564f82b0eba",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "KernelId": "399ec1da-2fb1-4cfb-9a21-b7692bfbc660",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-eres 0",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0,
+            "InputSegments": [{
+                    "TargetGpu": 1,
+                    "Name": "-asm 2",
+                    "Segment": "-asm 2",
+                    "Description": "\u542f\u7528\u6c47\u7f16\u5185\u6838\uff0c\u53ef\u4ee5\u63d0\u9ad8A\u5361\u7b97\u529b\u3002",
+                    "IsDefault": true
+                }, {
+                    "TargetGpu": 2,
+                    "Name": "-platform 1",
+                    "Segment": "-platform 1",
+                    "Description": "\u53ea\u4f7f\u7528A\u5361",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 2,
+                    "Name": "-platform 2",
+                    "Segment": "-platform 2",
+                    "Description": "\u53ea\u4f7f\u7528N\u5361",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 1,
+                    "Name": "-rxboost 1",
+                    "Segment": "-rxboost 1",
+                    "Description": "\u53ef\u63d0\u9ad8A\u5361\u7b97\u529b",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 2,
+                    "Name": "-strap 1",
+                    "Segment": "-strap 1",
+                    "Description": "\u53ef\u63d0\u5347N\u5361\u548cA\u5361\u7b97\u529b\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 1,
+                    "Name": "-y 1",
+                    "Segment": "-y 1",
+                    "Description": "\u542f\u7528\u8ba1\u7b97\u6a21\u5f0f\uff0c\u7981\u7528\u4ea4\u706b\u6a21\u5f0f\uff0c\u53ef\u4ee5\u8282\u7701\u4e00\u70b9\u529f\u8017\u3002",
+                    "IsDefault": true
+                }
+            ]
+        }, {
+            "Id": "4d12b2a3-7430-4df8-9faa-a98cffe7eb26",
+            "CoinId": "8fd4d8ce-757c-49e9-afcf-73c51fd134a1",
+            "KernelId": "16a0bd3d-e300-4860-970f-323678b75e0f",
+            "SupportedGpu": 0,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0,
+            "FileWriterIds": [
+                "e27220a9-49c0-43c9-9ae5-1fd9b969f65c"
+            ]
+        }, {
+            "Id": "4f815a31-c35b-439b-94fb-1e385f93dd24",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "KernelId": "65d7bd94-a64c-46a4-ba20-f00e648c91a4",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a ethash -o stratum+ssl://{pool} -u {wallet}.{worker}",
+            "DualFullArgs": "nbminer.exe -log-file \"{logfile}\" -a hns_ethash -o stratum+ssl://{dualPool} -u {dualWallet}.{worker} -do stratum+ssl://{pool} -du {wallet}.{worker}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 26,
+            "InputSegments": [{
+                    "TargetGpu": 2,
+                    "Name": "-mt 6",
+                    "Segment": "-mt 6",
+                    "Description": "\u5c1d\u8bd5\u81ea\u52a8\u8c03\u65f6\u5e8f\u4ee5\u52a0\u901f\u7b97\u529b\uff0c\u9ed8\u8ba4\u53d6\u503c6\u8868\u793a\u6700\u9ad8\u7b97\u529b\uff0c\u53ef\u624b\u52a8\u57281-6\u4e4b\u95f4\u8c03\u6574\u53d6\u503c\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "-lhr 69",
+                    "Segment": "-lhr 69",
+                    "Description": "\u6570\u503c\u8d8a\u5927\uff0c\u6316\u77ff\u8fc7\u7a0b\u4e2d\u88ab\u9501\u7b97\u529b\u7684\u6982\u7387\u8d8a\u5927\uff0c\u9ed8\u8ba4\u503c 69 \u662f\u5f00\u53d1\u6d4b\u8bd5\u4e2d\u53ef\u4ee5\u957f\u671f\u7a33\u5b9a\u8fd0\u884c\u7684\u503c\uff0c\u7528\u6237\u53ef\u4ee5\u5c1d\u8bd5\u8c03\u9ad8\u6216\u8005\u8c03\u4f4e\u8be5\u6570\u503c\uff0c\u4ee5\u53d6\u5f97\u7b97\u529b\u548c\u7a33\u5b9a\u6027\u7684\u5e73\u8861",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "-lhr-mode 1",
+                    "Segment": "-lhr-mode 1",
+                    "Description": "\u9002\u7528\u4e8e\u8ffd\u6c42\u66f4\u9ad8\u7b97\u529b\uff0c\u9501\u529f\u8017\u4e0d\u9501\u6838\u5fc3\u9891\u7387\u7684\u663e\u5361",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "-lhr-mode 2",
+                    "Segment": "-lhr-mode 2",
+                    "Description": "\u4f4e\u529f\u8017\u6a21\u5f0f",
+                    "IsDefault": false
+                }
+            ],
+            "FragmentWriterIds": [
+                "9d7ea7d8-e6df-4977-9dde-502e7884ad53"
+            ]
+        }, {
+            "Id": "4fba81c1-3ef1-45e8-af46-1cccf5577a2b",
+            "CoinId": "8fd4d8ce-757c-49e9-afcf-73c51fd134a1",
+            "KernelId": "471f243d-9814-45da-a5c4-45f848d3e214",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a octopus -o stratum+tcp://{pool} -u {wallet}.{worker}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "51079355-a853-4214-9d5d-7f3af9d2062b",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "KernelId": "928aeebb-dfa7-49b0-93a5-80f77d88e92d",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "--algo ETHASH",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "552f2c19-7d12-4cdb-bcce-1c2c2e5876d1",
+            "CoinId": "8fd4d8ce-757c-49e9-afcf-73c51fd134a1",
+            "KernelId": "a4d55942-d8ec-437a-a05f-c711cf5ef5c0",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a octopus -o stratum+tcp://{pool} -u {wallet}.{worker}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "55ae5d83-d040-4667-b131-0e1442950133",
+            "CoinId": "6b20450b-5973-40e7-a4c2-93d23cb2a383",
+            "KernelId": "fa6598cb-4568-4343-8fd6-54ab64500ca1",
+            "SupportedGpu": 1,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a etchash -o stratum+tcp://{pool}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "5724d362-bf91-4abe-9cec-e5cce1d8256a",
+            "CoinId": "38d6061f-eb37-4639-aa33-45dd25abff3f",
+            "KernelId": "7bc646fe-5b32-4b49-a067-3ce7dd451982",
+            "SupportedGpu": 0,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "--algo kawpow",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "57363afa-2a02-4ff7-b390-248b0d2fa2b5",
+            "CoinId": "9ea5a2f8-c3c5-4f86-a119-904ad076e012",
+            "KernelId": "eb24f21b-687f-4122-b935-37c11afa266e",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "--algo AUTOLYKOS2",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "57ae5ccc-4fe4-4bc2-b66a-8c593bd43481",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "KernelId": "8253d1a5-5fb6-472b-b522-2addf9205d27",
+            "SupportedGpu": 1,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a ethash -o stratum+tcp://{pool} --eth_worker {worker}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "626de5ba-a4f3-4943-a843-6a31ad46a6f0",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "KernelId": "a89caa3e-f0dc-403b-8e35-ccd2b217f4e9",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a ethash -o stratum+ssl://{pool} -u {wallet}.{worker}",
+            "DualFullArgs": "nbminer.exe -log-file \"{logfile}\" -a hns_ethash -o stratum+tcp://{dualPool} -u {dualWallet}.{worker} -do stratum+ssl://{pool} -du {wallet}.{worker}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 29,
+            "InputSegments": [{
+                    "TargetGpu": 2,
+                    "Name": "-mt 6",
+                    "Segment": "-mt 6",
+                    "Description": "\u5c1d\u8bd5\u81ea\u52a8\u8c03\u65f6\u5e8f\u4ee5\u52a0\u901f\u7b97\u529b\uff0c\u9ed8\u8ba4\u53d6\u503c6\u8868\u793a\u6700\u9ad8\u7b97\u529b\uff0c\u53ef\u624b\u52a8\u57281-6\u4e4b\u95f4\u8c03\u6574\u53d6\u503c\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "-lhr 69",
+                    "Segment": "-lhr 69",
+                    "Description": "\u6570\u503c\u8d8a\u5927\uff0c\u6316\u77ff\u8fc7\u7a0b\u4e2d\u88ab\u9501\u7b97\u529b\u7684\u6982\u7387\u8d8a\u5927\uff0c\u9ed8\u8ba4\u503c 69 \u662f\u5f00\u53d1\u6d4b\u8bd5\u4e2d\u53ef\u4ee5\u957f\u671f\u7a33\u5b9a\u8fd0\u884c\u7684\u503c\uff0c\u7528\u6237\u53ef\u4ee5\u5c1d\u8bd5\u8c03\u9ad8\u6216\u8005\u8c03\u4f4e\u8be5\u6570\u503c\uff0c\u4ee5\u53d6\u5f97\u7b97\u529b\u548c\u7a33\u5b9a\u6027\u7684\u5e73\u8861",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "-lhr-mode 1",
+                    "Segment": "-lhr-mode 1",
+                    "Description": "\u9002\u7528\u4e8e\u8ffd\u6c42\u66f4\u9ad8\u7b97\u529b\uff0c\u9501\u529f\u8017\u4e0d\u9501\u6838\u5fc3\u9891\u7387\u7684\u663e\u5361",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "-lhr-mode 2",
+                    "Segment": "-lhr-mode 2",
+                    "Description": "\u4f4e\u529f\u8017\u6a21\u5f0f",
+                    "IsDefault": false
+                }
+            ],
+            "FragmentWriterIds": [
+                "9d7ea7d8-e6df-4977-9dde-502e7884ad53"
+            ]
+        }, {
+            "Id": "62a21148-84d2-4e12-9e51-12bd9e4e8517",
+            "CoinId": "8fd4d8ce-757c-49e9-afcf-73c51fd134a1",
+            "KernelId": "63c64ee9-0cd3-44d9-8b60-4b0428c9221c",
+            "SupportedGpu": 0,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a octopus -o stratum+tcp://{pool} -u {wallet}.{worker}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "67ab1161-8388-4c49-805c-5a1fc62814be",
+            "CoinId": "6b20450b-5973-40e7-a4c2-93d23cb2a383",
+            "KernelId": "dcb1b5f0-2e51-4bb5-aa93-30e36a120d37",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-coin etc",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0,
+            "InputSegments": [{
+                    "TargetGpu": 2,
+                    "Name": "-rxboost 1",
+                    "Segment": "-rxboost 1",
+                    "Description": "\u53ef\u4ee5\u63d0\u9ad8\u4e00\u70b9\u7b97\u529b\u3002",
+                    "IsDefault": false
+                }
+            ]
+        }, {
+            "Id": "6a99bce7-5a29-4426-b777-21777eeb1687",
+            "CoinId": "9ea5a2f8-c3c5-4f86-a119-904ad076e012",
+            "KernelId": "9e79ac9f-4e8f-49f3-af61-b92171d477b3",
+            "SupportedGpu": 0,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a autolykos2",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "6b7e4703-5b27-4c1c-875c-f6af280603fa",
+            "CoinId": "38d6061f-eb37-4639-aa33-45dd25abff3f",
+            "KernelId": "e896dc5c-fbf9-4e41-82a1-a6142db2e90d",
+            "SupportedGpu": 0,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "--algo kawpow",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "6fcb2288-de66-4ecd-aa8e-f22a1b25d945",
+            "CoinId": "6b20450b-5973-40e7-a4c2-93d23cb2a383",
+            "KernelId": "928aeebb-dfa7-49b0-93a5-80f77d88e92d",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "--algo ETCHASH",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "70d6fa1a-27a8-49c0-9fb6-b64a9f857ce4",
+            "CoinId": "9ea5a2f8-c3c5-4f86-a119-904ad076e012",
+            "KernelId": "65d7bd94-a64c-46a4-ba20-f00e648c91a4",
+            "SupportedGpu": 0,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a ergo -o stratum+tcp://{pool} -u {wallet}.{worker}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "70e1702d-c54e-4cb1-a09f-4aab321ec80d",
+            "CoinId": "6b20450b-5973-40e7-a4c2-93d23cb2a383",
+            "KernelId": "e896dc5c-fbf9-4e41-82a1-a6142db2e90d",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "--algo etchash --worker {worker}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "71a8e320-7e3b-4840-8e78-718c11f37bd6",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "KernelId": "eb24f21b-687f-4122-b935-37c11afa266e",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "--algo ETHASH",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "76b71b03-8615-4087-ae7d-39e6e7c1fc8e",
+            "CoinId": "9ea5a2f8-c3c5-4f86-a119-904ad076e012",
+            "KernelId": "391fdfbd-860a-47ac-8c0b-d0fecfb0547f",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "--algo AUTOLYKOS2",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "7ca10ba0-1c7f-457a-a986-d0cc9124a1a9",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "KernelId": "5a583703-aaec-4d72-a4b4-0a8968500015",
+            "SupportedGpu": 2,
+            "IsSupportPool1": true,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-coin eth",
+            "IsHot": false,
+            "IsRecommend": true,
+            "SortNumber": 30,
+            "InputSegments": [{
+                    "TargetGpu": 2,
+                    "Name": "-rxboost 1",
+                    "Segment": "-rxboost 1",
+                    "Description": "\u53ef\u4ee5\u63d0\u9ad8\u4e00\u70b9\u7b97\u529b\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 2,
+                    "Name": "-straps 1",
+                    "Segment": "-straps 1",
+                    "Description": "\u65f6\u5e8f1\u53f7\uff0c\u53ef\u63d0\u9ad8\u7b97\u529b\uff0c\u53ef\u624b\u52a8\u5c061\u6539\u4e3a2\u62163\u7b97\u529b\u66f4\u9ad8\u4f46\u4e0d\u4e00\u5b9a\u7a33\u5b9a\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 2,
+                    "Name": "-mi 14",
+                    "Segment": "-mi 14",
+                    "Description": "\u6316\u77ff\u5f3a\u5ea6\uff0c\u53d6\u503c0\u523014\uff0c\u4e0d\u52fe\u9009\u65f6\u9ed8\u8ba4\u662f12\uff0c\u53ef\u624b\u52a8\u57280\u523014\u95f4\u8c03\u6574\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 1,
+                    "Name": "-amd",
+                    "Segment": "-amd",
+                    "Description": "\u53ea\u4f7f\u7528A\u5361",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "-nvidia",
+                    "Segment": "-nvidia",
+                    "Description": "\u53ea\u4f7f\u7528N\u5361\uff0c\u7528\u4e8e\u544a\u8bc9\u5185\u6838\u522b\u4f7f\u7528\u96c6\u663e\u6316\u77ff\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "-nvdo 1",
+                    "Segment": "-nvdo 1",
+                    "Description": "\u9488\u5bf9NVIDIA\u9a71\u52a8\u4f18\u5316",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 1,
+                    "Name": "-clKernel 2",
+                    "Segment": "-clKernel 2",
+                    "Description": "\u4ec5\u9002\u7528\u4e8eRX470/570/480/580",
+                    "IsDefault": false
+                }
+            ]
+        }, {
+            "Id": "7d985dbf-743b-4c2b-9160-ab76752180f6",
+            "CoinId": "9ea5a2f8-c3c5-4f86-a119-904ad076e012",
+            "KernelId": "928aeebb-dfa7-49b0-93a5-80f77d88e92d",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "--algo AUTOLYKOS2",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "806566cd-ca86-411e-9d2f-d5533324098f",
+            "CoinId": "38d6061f-eb37-4639-aa33-45dd25abff3f",
+            "KernelId": "6048d91c-71f7-4d0f-b050-ed474768b753",
+            "SupportedGpu": 0,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "--algo kawpow",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "871fba6a-adb0-47c9-af0c-625ab52b2fbf",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "KernelId": "0c9d6314-9a95-422c-9bba-0eb3221b4c56",
+            "SupportedGpu": 2,
+            "IsSupportPool1": true,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-coin eth",
+            "IsHot": false,
+            "IsRecommend": true,
+            "SortNumber": 32,
+            "InputSegments": [{
+                    "TargetGpu": 2,
+                    "Name": "-rxboost 1",
+                    "Segment": "-rxboost 1",
+                    "Description": "\u53ef\u4ee5\u63d0\u9ad8\u4e00\u70b9\u7b97\u529b\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 2,
+                    "Name": "-mi 14",
+                    "Segment": "-mi 14",
+                    "Description": "\u6316\u77ff\u5f3a\u5ea6\uff0c\u53d6\u503c0\u523014\uff0c\u4e0d\u52fe\u9009\u65f6\u9ed8\u8ba4\u662f12\uff0c\u53ef\u624b\u52a8\u57280\u523014\u95f4\u8c03\u6574\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "-nvidia",
+                    "Segment": "-nvidia",
+                    "Description": "\u53ea\u4f7f\u7528N\u5361\uff0c\u7528\u4e8e\u544a\u8bc9\u5185\u6838\u522b\u4f7f\u7528\u96c6\u663e\u6316\u77ff\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 1,
+                    "Name": "-amd",
+                    "Segment": "-amd",
+                    "Description": "\u53ea\u4f7f\u7528A\u5361",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 2,
+                    "Name": "-straps 1",
+                    "Segment": "-straps 1",
+                    "Description": "\u65f6\u5e8f1\u53f7\uff0c\u53ef\u63d0\u9ad8\u7b97\u529b\uff0c\u53ef\u624b\u52a8\u5c061\u6539\u4e3a2\u62163\u7b97\u529b\u66f4\u9ad8\u4f46\u4e0d\u4e00\u5b9a\u7a33\u5b9a\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "-nvdo 1",
+                    "Segment": "-nvdo 1",
+                    "Description": "\u9488\u5bf9NVIDIA\u9a71\u52a8\u4f18\u5316",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 1,
+                    "Name": "-clKernel 2",
+                    "Segment": "-clKernel 2",
+                    "Description": "\u4ec5\u9002\u7528\u4e8eRX470/570/480/580",
+                    "IsDefault": false
+                }
+            ]
+        }, {
+            "Id": "88bc1b2e-2650-45e6-b95e-11dc163e8dac",
+            "CoinId": "6b20450b-5973-40e7-a4c2-93d23cb2a383",
+            "KernelId": "65d7bd94-a64c-46a4-ba20-f00e648c91a4",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a etchash -o stratum+ssl://{pool} -u {wallet}.{worker}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "8c029a0c-341f-4f36-92a0-d38371562ba3",
+            "CoinId": "6b20450b-5973-40e7-a4c2-93d23cb2a383",
+            "KernelId": "8253d1a5-5fb6-472b-b522-2addf9205d27",
+            "SupportedGpu": 1,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a etchash -o stratum+tcp://{pool}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "8f731437-bb30-4972-85ba-7037b1508244",
+            "CoinId": "9ea5a2f8-c3c5-4f86-a119-904ad076e012",
+            "KernelId": "63c64ee9-0cd3-44d9-8b60-4b0428c9221c",
+            "SupportedGpu": 0,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a ergo -o stratum+tcp://{pool} -u {wallet}.{worker}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "90338790-068a-41aa-bcd4-8aa785af892c",
+            "CoinId": "9ea5a2f8-c3c5-4f86-a119-904ad076e012",
+            "KernelId": "5487725f-9260-4f11-8f42-4e42fa8b632e",
+            "SupportedGpu": 0,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a autolykos2",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "956982af-663a-4999-9dae-bbd0579e6711",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "KernelId": "2ff3c24f-59f8-4c4b-b856-87be42171b0a",
+            "SupportedGpu": 1,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a ethash -o stratum+tcp://{pool} --eth_worker {worker}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "971cf7db-5d60-4420-a03b-7c1eedce6fe8",
+            "CoinId": "8fd4d8ce-757c-49e9-afcf-73c51fd134a1",
+            "KernelId": "65d7bd94-a64c-46a4-ba20-f00e648c91a4",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a octopus -o stratum+tcp://{pool} -u {wallet}.{worker}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "9a4e234c-d286-4840-b86c-f1428fa6bcc7",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "KernelId": "ff69a266-63dd-4b5a-acbb-909e5eb81020",
+            "SupportedGpu": 2,
+            "IsSupportPool1": true,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-coin eth",
+            "IsHot": false,
+            "IsRecommend": true,
+            "SortNumber": 0,
+            "InputSegments": [{
+                    "TargetGpu": 2,
+                    "Name": "-rxboost 1",
+                    "Segment": "-rxboost 1",
+                    "Description": "\u53ef\u4ee5\u63d0\u9ad8\u4e00\u70b9\u7b97\u529b\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 1,
+                    "Name": "-amd",
+                    "Segment": "-amd",
+                    "Description": "\u53ea\u4f7f\u7528A\u5361",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "-nvidia",
+                    "Segment": "-nvidia",
+                    "Description": "\u53ea\u4f7f\u7528N\u5361\uff0c\u7528\u4e8e\u544a\u8bc9\u5185\u6838\u522b\u4f7f\u7528\u96c6\u663e\u6316\u77ff\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 2,
+                    "Name": "-straps 1",
+                    "Segment": "-straps 1",
+                    "Description": "\u65f6\u5e8f1\u53f7\uff0c\u53ef\u63d0\u9ad8\u7b97\u529b\uff0c\u53ef\u624b\u52a8\u5c061\u6539\u4e3a2\u62163\u7b97\u529b\u66f4\u9ad8\u4f46\u4e0d\u4e00\u5b9a\u7a33\u5b9a\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 2,
+                    "Name": "-mi 14",
+                    "Segment": "-mi 14",
+                    "Description": "\u6316\u77ff\u5f3a\u5ea6\uff0c\u53d6\u503c0\u523014\uff0c\u4e0d\u52fe\u9009\u65f6\u9ed8\u8ba4\u662f12\uff0c\u53ef\u624b\u52a8\u57280\u523014\u95f4\u8c03\u6574\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 1,
+                    "Name": "-clKernel 2",
+                    "Segment": "-clKernel 2",
+                    "Description": "\u4ec5\u9002\u7528\u4e8eRX470/570/480/580",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "-nvdo 1",
+                    "Segment": "-nvdo 1",
+                    "Description": "\u9488\u5bf9NVIDIA\u9a71\u52a8\u4f18\u5316",
+                    "IsDefault": false
+                }
+            ]
+        }, {
+            "Id": "9b72121b-7ae2-4ea8-8235-4702037dc8aa",
+            "CoinId": "6b20450b-5973-40e7-a4c2-93d23cb2a383",
+            "KernelId": "cb2143fe-5af2-49e1-8dee-d42c9594670a",
+            "SupportedGpu": 0,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a etchash -p c=ETC",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "9bcd0214-bb6b-4081-abc1-5748d1d467b5",
+            "CoinId": "38d6061f-eb37-4639-aa33-45dd25abff3f",
+            "KernelId": "fa6598cb-4568-4343-8fd6-54ab64500ca1",
+            "SupportedGpu": 1,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a kawpow -o stratum+tcp://{pool}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 12
+        }, {
+            "Id": "a0de45b7-fd62-4c66-925c-a38633002c13",
+            "CoinId": "9ea5a2f8-c3c5-4f86-a119-904ad076e012",
+            "KernelId": "a89caa3e-f0dc-403b-8e35-ccd2b217f4e9",
+            "SupportedGpu": 0,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a ergo -o stratum+tcp://{pool} -u {wallet}.{worker}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0,
+            "InputSegments": [{
+                    "TargetGpu": 0,
+                    "Name": "-lhr 85",
+                    "Segment": "-lhr 85",
+                    "Description": "-lhr\u503c\u8868\u793a\u671f\u671b\u8fbe\u5230\u7684\u975eLHR\u5361\u7b97\u529b\u7684\u767e\u5206\u6bd4",
+                    "IsDefault": false
+                }
+            ]
+        }, {
+            "Id": "a77fbd6a-abe7-481d-ad43-953da88df7ca",
+            "CoinId": "38d6061f-eb37-4639-aa33-45dd25abff3f",
+            "KernelId": "a89caa3e-f0dc-403b-8e35-ccd2b217f4e9",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a kawpow -o stratum+tcp://{pool} -long-format -u {wallet}.{worker}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "a9267877-fb37-49c9-9d28-62f34cc6f06d",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "KernelId": "6048d91c-71f7-4d0f-b050-ed474768b753",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "--algo ethash",
+            "DualFullArgs": "miner.exe --algo ethash+eaglesong --server {pool} --user {wallet}.{worker} --dserver {dualPool} --duser {dualUserName}.{worker}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0,
+            "InputSegments": [{
+                    "TargetGpu": 2,
+                    "Name": "--mt 6",
+                    "Segment": "--mt 6",
+                    "Description": "\u663e\u5b58\u65f6\u5e8f\uff0c\u53ef\u57281\u81f36\u4e4b\u95f4\u624b\u52a8\u8c03\u6574\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "--lhr_autotune 0",
+                    "Segment": "--lhr_autotune 0",
+                    "Description": "\u7981\u7528LHR",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "--lhr 1",
+                    "Segment": "--lhr 1",
+                    "Description": "\u5f3a\u5236\u89e3\u9501RTX 3060 V1",
+                    "IsDefault": false
+                }
+            ]
+        }, {
+            "Id": "acc96298-0f06-474c-868b-49d5ed64e3ab",
+            "CoinId": "38d6061f-eb37-4639-aa33-45dd25abff3f",
+            "KernelId": "a4d55942-d8ec-437a-a05f-c711cf5ef5c0",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a kawpow -o stratum+tcp://{pool} -long-format -u {wallet}.{worker}",
+            "Notice": "\u652f\u6301RVN\u5206\u53c9\u65b0\u7b97\u6cd5\uff0c\u6ce8\u610f6\u53f7\u540e\u4f7f\u7528\u3002",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "b0262154-96ea-493e-aeb4-ba5a4bdc74d9",
+            "CoinId": "b1af4972-2180-4641-b066-285a6c1f4bf5",
+            "KernelId": "7bc646fe-5b32-4b49-a067-3ce7dd451982",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "--algo beamhash --ssl 1",
+            "Notice": "\u652f\u6301BEAM III\u65b0\u7b97\u6cd5",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "b1b94702-9040-4ac4-9b29-59abe0bbb7f7",
+            "CoinId": "b1af4972-2180-4641-b066-285a6c1f4bf5",
+            "KernelId": "512fb031-3157-44e9-bf7d-8426af79b608",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "--algo beamhash --ssl 1",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "b6ac3191-29f5-44db-b016-2038b99c4c6f",
+            "CoinId": "b1af4972-2180-4641-b066-285a6c1f4bf5",
+            "KernelId": "e896dc5c-fbf9-4e41-82a1-a6142db2e90d",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "--algo beamhash --ssl 1 --worker {worker}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "ba7db77a-64c9-4ac6-a2b2-dd8704838437",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "KernelId": "471f243d-9814-45da-a5c4-45f848d3e214",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a ethash -o stratum+ssl://{pool} -u {wallet}.{worker}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0,
+            "InputSegments": [{
+                    "TargetGpu": 2,
+                    "Name": "-mt 6",
+                    "Segment": "-mt 6",
+                    "Description": "\u5c1d\u8bd5\u81ea\u52a8\u8c03\u65f6\u5e8f\u4ee5\u52a0\u901f\u7b97\u529b\uff0c\u9ed8\u8ba4\u53d6\u503c6\u8868\u793a\u6700\u9ad8\u7b97\u529b\uff0c\u53ef\u624b\u52a8\u57281-6\u4e4b\u95f4\u8c03\u6574\u53d6\u503c\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "-lhr 69",
+                    "Segment": "-lhr 69",
+                    "Description": "\u6570\u503c\u8d8a\u5927\uff0c\u6316\u77ff\u8fc7\u7a0b\u4e2d\u88ab\u9501\u7b97\u529b\u7684\u6982\u7387\u8d8a\u5927\uff0c\u9ed8\u8ba4\u503c 69 \u662f\u5f00\u53d1\u6d4b\u8bd5\u4e2d\u53ef\u4ee5\u957f\u671f\u7a33\u5b9a\u8fd0\u884c\u7684\u503c\uff0c\u7528\u6237\u53ef\u4ee5\u5c1d\u8bd5\u8c03\u9ad8\u6216\u8005\u8c03\u4f4e\u8be5\u6570\u503c\uff0c\u4ee5\u53d6\u5f97\u7b97\u529b\u548c\u7a33\u5b9a\u6027\u7684\u5e73\u8861",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "-lhr-mode 1",
+                    "Segment": "-lhr-mode 1",
+                    "Description": "\u9002\u7528\u4e8e\u8ffd\u6c42\u66f4\u9ad8\u7b97\u529b\uff0c\u9501\u529f\u8017\u4e0d\u9501\u6838\u5fc3\u9891\u7387\u7684\u663e\u5361",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "-lhr-mode 2",
+                    "Segment": "-lhr-mode 2",
+                    "Description": "\u4f4e\u529f\u8017\u6a21\u5f0f",
+                    "IsDefault": false
+                }
+            ],
+            "FragmentWriterIds": [
+                "9d7ea7d8-e6df-4977-9dde-502e7884ad53"
+            ]
+        }, {
+            "Id": "bb62bbef-ccab-48f0-a4e2-ac53b16489c0",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "KernelId": "9e79ac9f-4e8f-49f3-af61-b92171d477b3",
+            "SupportedGpu": 0,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a ethash -p c=ETH",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "bc1d2d2c-08e2-4f1e-825c-bcc8ffae3924",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "KernelId": "37b75fcd-bf34-4b67-90f7-0e003ac92721",
+            "SupportedGpu": 2,
+            "IsSupportPool1": true,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-eres 0",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0,
+            "InputSegments": [{
+                    "TargetGpu": 2,
+                    "Name": "-strap 1",
+                    "Segment": "-strap 1",
+                    "Description": "\u53ef\u63d0\u5347N\u5361\u548cA\u5361\u7b97\u529b\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 1,
+                    "Name": "-rxboost 1",
+                    "Segment": "-rxboost 1",
+                    "Description": "\u53ef\u63d0\u9ad8A\u5361\u7b97\u529b\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 1,
+                    "Name": "-asm 2",
+                    "Segment": "-asm 2",
+                    "Description": "\u542f\u7528\u6c47\u7f16\u5185\u6838\uff0c\u53ef\u4ee5\u63d0\u9ad8A\u5361\u7b97\u529b\u3002",
+                    "IsDefault": true
+                }, {
+                    "TargetGpu": 1,
+                    "Name": "-y 1",
+                    "Segment": "-y 1",
+                    "Description": "\u542f\u7528\u8ba1\u7b97\u6a21\u5f0f\uff0c\u7981\u7528\u4ea4\u706b\u6a21\u5f0f\uff0c\u53ef\u4ee5\u8282\u7701\u4e00\u70b9\u529f\u8017\u3002",
+                    "IsDefault": true
+                }, {
+                    "TargetGpu": 2,
+                    "Name": "-platform 1",
+                    "Segment": "-platform 1",
+                    "Description": "\u53ea\u4f7f\u7528A\u5361\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 2,
+                    "Name": "-platform 2",
+                    "Segment": "-platform 2",
+                    "Description": "\u53ea\u4f7f\u7528N\u5361\u3002",
+                    "IsDefault": false
+                }
+            ]
+        }, {
+            "Id": "be06d4e7-843c-4691-92e0-277a920494b6",
+            "CoinId": "6b20450b-5973-40e7-a4c2-93d23cb2a383",
+            "KernelId": "391fdfbd-860a-47ac-8c0b-d0fecfb0547f",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "--algo ETCHASH",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "be270e6b-5fc7-4f30-8e34-d90252e7c318",
+            "CoinId": "9ea5a2f8-c3c5-4f86-a119-904ad076e012",
+            "KernelId": "a4d55942-d8ec-437a-a05f-c711cf5ef5c0",
+            "SupportedGpu": 0,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a ergo -o stratum+tcp://{pool} -u {wallet}.{worker}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0,
+            "InputSegments": [{
+                    "TargetGpu": 0,
+                    "Name": "-lhr 85",
+                    "Segment": "-lhr 85",
+                    "Description": "-lhr\u503c\u8868\u793a\u671f\u671b\u8fbe\u5230\u7684\u975eLHR\u5361\u7b97\u529b\u7684\u767e\u5206\u6bd4",
+                    "IsDefault": false
+                }
+            ]
+        }, {
+            "Id": "bf241a3f-4338-4a8d-a322-5990c4ce1a1d",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "KernelId": "b6572da1-b5c0-4892-a71f-80d85cebce9d",
+            "SupportedGpu": 2,
+            "IsSupportPool1": true,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-coin eth",
+            "IsHot": false,
+            "IsRecommend": true,
+            "SortNumber": 0,
+            "InputSegments": [{
+                    "TargetGpu": 1,
+                    "Name": "-amd",
+                    "Segment": "-amd",
+                    "Description": "\u53ea\u4f7f\u7528A\u5361",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 1,
+                    "Name": "-clKernel 2",
+                    "Segment": "-clKernel 2",
+                    "Description": "\u4ec5\u9002\u7528\u4e8eRX470/570/480/580",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 2,
+                    "Name": "-mi 14",
+                    "Segment": "-mi 14",
+                    "Description": "\u6316\u77ff\u5f3a\u5ea6\uff0c\u53d6\u503c0\u523014\uff0c\u4e0d\u52fe\u9009\u65f6\u9ed8\u8ba4\u662f12\uff0c\u53ef\u624b\u52a8\u57280\u523014\u95f4\u8c03\u6574\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "-nvdo 1",
+                    "Segment": "-nvdo 1",
+                    "Description": "\u9488\u5bf9NVIDIA\u9a71\u52a8\u4f18\u5316",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "-nvidia",
+                    "Segment": "-nvidia",
+                    "Description": "\u53ea\u4f7f\u7528N\u5361\uff0c\u7528\u4e8e\u544a\u8bc9\u5185\u6838\u522b\u4f7f\u7528\u96c6\u663e\u6316\u77ff\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 2,
+                    "Name": "-rxboost 1",
+                    "Segment": "-rxboost 1",
+                    "Description": "\u53ef\u4ee5\u63d0\u9ad8\u4e00\u70b9\u7b97\u529b\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 2,
+                    "Name": "-straps 1",
+                    "Segment": "-straps 1",
+                    "Description": "\u65f6\u5e8f1\u53f7\uff0c\u53ef\u63d0\u9ad8\u7b97\u529b\uff0c\u53ef\u624b\u52a8\u5c061\u6539\u4e3a2\u62163\u7b97\u529b\u66f4\u9ad8\u4f46\u4e0d\u4e00\u5b9a\u7a33\u5b9a\u3002",
+                    "IsDefault": false
+                }
+            ]
+        }, {
+            "Id": "c123c60b-0ae4-437d-b6db-958ac0b6e206",
+            "CoinId": "8fd4d8ce-757c-49e9-afcf-73c51fd134a1",
+            "KernelId": "5487725f-9260-4f11-8f42-4e42fa8b632e",
+            "SupportedGpu": 0,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a octopus -p c=CFX",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "cb72a7fb-ab18-44fc-a00f-b6ce9db3235e",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "KernelId": "512fb031-3157-44e9-bf7d-8426af79b608",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "--algo ethash",
+            "DualFullArgs": "miner.exe --algo ethash+eaglesong --server {pool} --user {wallet}.{worker} --dserver {dualPool} --duser {dualUserName}.{worker}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0,
+            "InputSegments": [{
+                    "TargetGpu": 2,
+                    "Name": "--mt 6",
+                    "Segment": "--mt 6",
+                    "Description": "\u663e\u5b58\u65f6\u5e8f\uff0c\u53ef\u57281\u81f36\u4e4b\u95f4\u624b\u52a8\u8c03\u6574\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "--lhr 1",
+                    "Segment": "--lhr 1",
+                    "Description": "\u5f3a\u5236\u89e3\u9501RTX 3060 V1",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "--lhr_autotune 0",
+                    "Segment": "--lhr_autotune 0",
+                    "Description": "\u7981\u7528LHR",
+                    "IsDefault": false
+                }
+            ]
+        }, {
+            "Id": "cbd0792b-f307-49f4-bdb8-70d7e13a6110",
+            "CoinId": "6b20450b-5973-40e7-a4c2-93d23cb2a383",
+            "KernelId": "471f243d-9814-45da-a5c4-45f848d3e214",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a etchash -o stratum+ssl://{pool} -u {wallet}.{worker}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "ce0182e2-7fde-4ac4-b7db-e6eb8e32200d",
+            "CoinId": "38d6061f-eb37-4639-aa33-45dd25abff3f",
+            "KernelId": "2ff3c24f-59f8-4c4b-b856-87be42171b0a",
+            "SupportedGpu": 1,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a kawpow -o stratum+tcp://{pool}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "dbbcc6b8-d06c-4a61-8e1b-8017111b790b",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "KernelId": "a4d55942-d8ec-437a-a05f-c711cf5ef5c0",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a ethash -o stratum+ssl://{pool} -u {wallet}.{worker}",
+            "DualFullArgs": "nbminer.exe -log-file \"{logfile}\" -a hns_ethash -o stratum+tcp://{dualPool} -u {dualWallet}.{worker} -do stratum+ssl://{pool} -du {wallet}.{worker}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 27,
+            "InputSegments": [{
+                    "TargetGpu": 2,
+                    "Name": "-mt 6",
+                    "Segment": "-mt 6",
+                    "Description": "\u5c1d\u8bd5\u81ea\u52a8\u8c03\u65f6\u5e8f\u4ee5\u52a0\u901f\u7b97\u529b\uff0c\u9ed8\u8ba4\u53d6\u503c6\u8868\u793a\u6700\u9ad8\u7b97\u529b\uff0c\u53ef\u624b\u52a8\u57281-6\u4e4b\u95f4\u8c03\u6574\u53d6\u503c\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "-lhr 69",
+                    "Segment": "-lhr 69",
+                    "Description": "\u6570\u503c\u8d8a\u5927\uff0c\u6316\u77ff\u8fc7\u7a0b\u4e2d\u88ab\u9501\u7b97\u529b\u7684\u6982\u7387\u8d8a\u5927\uff0c\u9ed8\u8ba4\u503c 69 \u662f\u5f00\u53d1\u6d4b\u8bd5\u4e2d\u53ef\u4ee5\u957f\u671f\u7a33\u5b9a\u8fd0\u884c\u7684\u503c\uff0c\u7528\u6237\u53ef\u4ee5\u5c1d\u8bd5\u8c03\u9ad8\u6216\u8005\u8c03\u4f4e\u8be5\u6570\u503c\uff0c\u4ee5\u53d6\u5f97\u7b97\u529b\u548c\u7a33\u5b9a\u6027\u7684\u5e73\u8861",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "-lhr-mode 1",
+                    "Segment": "-lhr-mode 1",
+                    "Description": "\u9002\u7528\u4e8e\u8ffd\u6c42\u66f4\u9ad8\u7b97\u529b\uff0c\u9501\u529f\u8017\u4e0d\u9501\u6838\u5fc3\u9891\u7387\u7684\u663e\u5361",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "-lhr-mode 2",
+                    "Segment": "-lhr-mode 2",
+                    "Description": "\u4f4e\u529f\u8017\u6a21\u5f0f",
+                    "IsDefault": false
+                }
+            ],
+            "FragmentWriterIds": [
+                "9d7ea7d8-e6df-4977-9dde-502e7884ad53"
+            ]
+        }, {
+            "Id": "dd47aad3-af8e-45d7-a734-e87639c704c6",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "KernelId": "e896dc5c-fbf9-4e41-82a1-a6142db2e90d",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "--algo ethash",
+            "DualFullArgs": "miner.exe --algo ethash+eaglesong --server {pool} --user {wallet}.{worker} --dserver {dualPool} --duser {dualUserName}.{worker}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0,
+            "InputSegments": [{
+                    "TargetGpu": 2,
+                    "Name": "--mt 6",
+                    "Segment": "--mt 6",
+                    "Description": "\u663e\u5b58\u65f6\u5e8f\uff0c\u53ef\u57281\u81f36\u4e4b\u95f4\u624b\u52a8\u8c03\u6574\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "--lhr 1",
+                    "Segment": "--lhr 1",
+                    "Description": "\u5f3a\u5236\u89e3\u9501RTX 3060 V1",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "--lhr_autotune 0",
+                    "Segment": "--lhr_autotune 0",
+                    "Description": "\u7981\u7528LHR",
+                    "IsDefault": false
+                }
+            ]
+        }, {
+            "Id": "defbe08c-0181-4698-ba2b-d9b68883d1bf",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "KernelId": "7bc646fe-5b32-4b49-a067-3ce7dd451982",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "--algo ethash",
+            "DualFullArgs": "miner.exe --algo ethash+eaglesong --server {pool} --user {wallet}.{worker} --dserver {dualPool} --duser {dualUserName}.{worker}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0,
+            "InputSegments": [{
+                    "TargetGpu": 2,
+                    "Name": "--mt 6",
+                    "Segment": "--mt 6",
+                    "Description": "\u663e\u5b58\u65f6\u5e8f\uff0c\u53ef\u57281\u81f36\u4e4b\u95f4\u624b\u52a8\u8c03\u6574\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "--lhr_autotune 0",
+                    "Segment": "--lhr_autotune 0",
+                    "Description": "\u7981\u7528LHR",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "--lhr 1",
+                    "Segment": "--lhr 1",
+                    "Description": "\u5f3a\u5236\u89e3\u9501RTX 3060 V1",
+                    "IsDefault": false
+                }
+            ]
+        }, {
+            "Id": "e27aaeeb-d2cf-4056-bfd3-4a6760c54d6d",
+            "CoinId": "6b20450b-5973-40e7-a4c2-93d23cb2a383",
+            "KernelId": "ff69a266-63dd-4b5a-acbb-909e5eb81020",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-coin etc",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0,
+            "InputSegments": [{
+                    "TargetGpu": 2,
+                    "Name": "-rxboost 1",
+                    "Segment": "-rxboost 1",
+                    "Description": "\u53ef\u4ee5\u63d0\u9ad8\u4e00\u70b9\u7b97\u529b\u3002",
+                    "IsDefault": false
+                }
+            ]
+        }, {
+            "Id": "e47da2f9-fde8-4529-bb9a-f019fcc4c7af",
+            "CoinId": "6b20450b-5973-40e7-a4c2-93d23cb2a383",
+            "KernelId": "9e79ac9f-4e8f-49f3-af61-b92171d477b3",
+            "SupportedGpu": 0,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a etchash -p c=ETC",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "e5196f10-212d-4099-88bf-02d2641e9e7a",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "KernelId": "391fdfbd-860a-47ac-8c0b-d0fecfb0547f",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "--algo ETHASH",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "e8ef8c96-a415-44ee-b245-15e20d887471",
+            "CoinId": "38d6061f-eb37-4639-aa33-45dd25abff3f",
+            "KernelId": "63c64ee9-0cd3-44d9-8b60-4b0428c9221c",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a kawpow -o stratum+tcp://{pool} -long-format -u {wallet}.{worker}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "e9917d15-c748-49b8-88ff-12308eaa611a",
+            "CoinId": "b1af4972-2180-4641-b066-285a6c1f4bf5",
+            "KernelId": "6048d91c-71f7-4d0f-b050-ed474768b753",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "--algo beamhash --ssl 1",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "ead47765-0f24-4a4c-b486-cd03b0437370",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "KernelId": "9b263828-82f0-490b-8510-4591371a019f",
+            "SupportedGpu": 2,
+            "IsSupportPool1": true,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-eres 0",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0,
+            "InputSegments": [{
+                    "TargetGpu": 2,
+                    "Name": "-strap 1",
+                    "Segment": "-strap 1",
+                    "Description": "\u53ef\u63d0\u5347N\u5361\u548cA\u5361\u7b97\u529b\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 1,
+                    "Name": "-rxboost 1",
+                    "Segment": "-rxboost 1",
+                    "Description": "\u53ef\u63d0\u9ad8A\u5361\u7b97\u529b\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 1,
+                    "Name": "-asm 2",
+                    "Segment": "-asm 2",
+                    "Description": "\u542f\u7528\u6c47\u7f16\u5185\u6838\uff0c\u53ef\u4ee5\u63d0\u9ad8A\u5361\u7b97\u529b\u3002",
+                    "IsDefault": true
+                }, {
+                    "TargetGpu": 1,
+                    "Name": "-y 1",
+                    "Segment": "-y 1",
+                    "Description": "\u542f\u7528\u8ba1\u7b97\u6a21\u5f0f\uff0c\u7981\u7528\u4ea4\u706b\u6a21\u5f0f\uff0c\u53ef\u4ee5\u8282\u7701\u4e00\u70b9\u529f\u8017\u3002",
+                    "IsDefault": true
+                }, {
+                    "TargetGpu": 2,
+                    "Name": "-platform 1",
+                    "Segment": "-platform 1",
+                    "Description": "\u53ea\u4f7f\u7528A\u5361",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 2,
+                    "Name": "-platform 2",
+                    "Segment": "-platform 2",
+                    "Description": "\u53ea\u4f7f\u7528N\u5361",
+                    "IsDefault": false
+                }
+            ]
+        }, {
+            "Id": "eaea0744-36e9-455f-9bf6-69d939a80169",
+            "CoinId": "38d6061f-eb37-4639-aa33-45dd25abff3f",
+            "KernelId": "471f243d-9814-45da-a5c4-45f848d3e214",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a kawpow -o stratum+tcp://{pool} -long-format -u {wallet}.{worker}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "ec3bb0cc-a873-4db3-a2de-392d256de6d0",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "KernelId": "fa6598cb-4568-4343-8fd6-54ab64500ca1",
+            "SupportedGpu": 1,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a ethash -o stratum+tcp://{pool} --eth_worker {worker}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "ee5feed8-4e32-42d6-ac09-c4aa34ed5646",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "KernelId": "cb2143fe-5af2-49e1-8dee-d42c9594670a",
+            "SupportedGpu": 0,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a ethash -p c=ETH",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "f014b86d-30cc-4ecd-828b-b9816a8e4507",
+            "CoinId": "6b20450b-5973-40e7-a4c2-93d23cb2a383",
+            "KernelId": "5a583703-aaec-4d72-a4b4-0a8968500015",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-coin etc",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0,
+            "InputSegments": [{
+                    "TargetGpu": 2,
+                    "Name": "-rxboost 1",
+                    "Segment": "-rxboost 1",
+                    "Description": "\u53ef\u63d0\u9ad8\u4e00\u70b9\u7b97\u529b\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 2,
+                    "Name": "-straps 1",
+                    "Segment": "-straps 1",
+                    "Description": "\u65f6\u5e8f1\u53f7\uff0c\u53ef\u63d0\u9ad8\u7b97\u529b\uff0c\u53ef\u624b\u52a8\u5c061\u6539\u4e3a2\u62163\u7b97\u529b\u66f4\u9ad8\u4f46\u4e0d\u4e00\u5b9a\u7a33\u5b9a\u3002",
+                    "IsDefault": false
+                }
+            ]
+        }, {
+            "Id": "f3fc8e64-132d-4af1-8b03-e705a9be6ded",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "KernelId": "e6ef79ae-52ab-47e5-98b0-93f8539fcedc",
+            "SupportedGpu": 2,
+            "IsSupportPool1": true,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-eres 0",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0,
+            "InputSegments": [{
+                    "TargetGpu": 2,
+                    "Name": "-strap 1",
+                    "Segment": "-strap 1",
+                    "Description": "\u53ef\u63d0\u5347N\u5361\u548cA\u5361\u7b97\u529b\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 1,
+                    "Name": "-rxboost 1",
+                    "Segment": "-rxboost 1",
+                    "Description": "\u53ef\u63d0\u9ad8A\u5361\u7b97\u529b\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 1,
+                    "Name": "-asm 2",
+                    "Segment": "-asm 2",
+                    "Description": "\u542f\u7528\u6c47\u7f16\u5185\u6838\uff0c\u53ef\u4ee5\u63d0\u9ad8A\u5361\u7b97\u529b\u3002",
+                    "IsDefault": true
+                }, {
+                    "TargetGpu": 1,
+                    "Name": "-y 1",
+                    "Segment": "-y 1",
+                    "Description": "\u542f\u7528\u8ba1\u7b97\u6a21\u5f0f\uff0c\u7981\u7528\u4ea4\u706b\u6a21\u5f0f\uff0c\u53ef\u4ee5\u8282\u7701\u4e00\u70b9\u529f\u8017\u3002",
+                    "IsDefault": true
+                }, {
+                    "TargetGpu": 2,
+                    "Name": "-platform 1",
+                    "Segment": "-platform 1",
+                    "Description": "\u53ea\u4f7f\u7528A\u5361\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "-platform 2",
+                    "Segment": "-platform 2",
+                    "Description": "\u53ea\u4f7f\u7528N\u5361\u3002",
+                    "IsDefault": false
+                }
+            ],
+            "FileWriterIds": [
+                "36a1a7e5-07a8-45ee-837a-0bef2e725269"
+            ]
+        }, {
+            "Id": "f5b8f226-b33e-444a-bf02-3c0aedd7484c",
+            "CoinId": "6b20450b-5973-40e7-a4c2-93d23cb2a383",
+            "KernelId": "a89caa3e-f0dc-403b-8e35-ccd2b217f4e9",
+            "SupportedGpu": 2,
+            "IsSupportPool1": true,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a etchash -o stratum+ssl://{pool} -u {wallet}.{worker}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 15
+        }, {
+            "Id": "f8157c18-c8d5-4c48-b1e2-453fee49f152",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "KernelId": "ff514618-f6a7-44ea-9088-20009659ddbd",
+            "SupportedGpu": 2,
+            "IsSupportPool1": true,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-coin eth",
+            "IsHot": false,
+            "IsRecommend": true,
+            "SortNumber": 0,
+            "InputSegments": [{
+                    "TargetGpu": 2,
+                    "Name": "-rxboost 1",
+                    "Segment": "-rxboost 1",
+                    "Description": "\u53ef\u4ee5\u63d0\u9ad8\u4e00\u70b9\u7b97\u529b\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 2,
+                    "Name": "-straps 1",
+                    "Segment": "-straps 1",
+                    "Description": "\u65f6\u5e8f1\u53f7\uff0c\u53ef\u63d0\u9ad8\u7b97\u529b\uff0c\u53ef\u624b\u52a8\u5c061\u6539\u4e3a2\u62163\u7b97\u529b\u66f4\u9ad8\u4f46\u4e0d\u4e00\u5b9a\u7a33\u5b9a\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 2,
+                    "Name": "-mi 14",
+                    "Segment": "-mi 14",
+                    "Description": "\u6316\u77ff\u5f3a\u5ea6\uff0c\u53d6\u503c0\u523014\uff0c\u4e0d\u52fe\u9009\u65f6\u9ed8\u8ba4\u662f12\uff0c\u53ef\u624b\u52a8\u57280\u523014\u95f4\u8c03\u6574\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "-nvidia",
+                    "Segment": "-nvidia",
+                    "Description": "\u53ea\u4f7f\u7528N\u5361\uff0c\u7528\u4e8e\u544a\u8bc9\u5185\u6838\u522b\u4f7f\u7528\u96c6\u663e\u6316\u77ff\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 1,
+                    "Name": "-amd",
+                    "Segment": "-amd",
+                    "Description": "\u53ea\u4f7f\u7528A\u5361",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 1,
+                    "Name": "-clKernel 2",
+                    "Segment": "-clKernel 2",
+                    "Description": "\u4ec5\u9002\u7528\u4e8eRX470/570/480/580",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 0,
+                    "Name": "-nvdo 1",
+                    "Segment": "-nvdo 1",
+                    "Description": "\u9488\u5bf9NVIDIA\u9a71\u52a8\u4f18\u5316",
+                    "IsDefault": false
+                }
+            ]
+        }, {
+            "Id": "f89c4714-d029-41f4-bd72-cb22e89c607a",
+            "CoinId": "9ea5a2f8-c3c5-4f86-a119-904ad076e012",
+            "KernelId": "471f243d-9814-45da-a5c4-45f848d3e214",
+            "SupportedGpu": 0,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-a ergo -o stratum+tcp://{pool} -u {wallet}.{worker}",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "fca6e467-f977-4d52-ad13-38f1deda805a",
+            "CoinId": "6b20450b-5973-40e7-a4c2-93d23cb2a383",
+            "KernelId": "7bc646fe-5b32-4b49-a067-3ce7dd451982",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "--algo etchash",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }, {
+            "Id": "fde46876-4fa5-4a8e-9c9c-5f2d309c17ea",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "KernelId": "be088b6a-9e54-42dd-9773-c6f8a730bb59",
+            "SupportedGpu": 2,
+            "IsSupportPool1": true,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "-eres 0",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0,
+            "InputSegments": [{
+                    "TargetGpu": 2,
+                    "Name": "-strap 1",
+                    "Segment": "-strap 1",
+                    "Description": "\u53ef\u63d0\u5347N\u5361\u548cA\u5361\u7b97\u529b\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 1,
+                    "Name": "-rxboost 1",
+                    "Segment": "-rxboost 1",
+                    "Description": "\u53ef\u63d0\u9ad8A\u5361\u7b97\u529b\u3002",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 1,
+                    "Name": "-asm 2",
+                    "Segment": "-asm 2",
+                    "Description": "\u542f\u7528\u6c47\u7f16\u5185\u6838\uff0c\u53ef\u4ee5\u63d0\u9ad8A\u5361\u7b97\u529b\u3002",
+                    "IsDefault": true
+                }, {
+                    "TargetGpu": 1,
+                    "Name": "-y 1",
+                    "Segment": "-y 1",
+                    "Description": "\u542f\u7528\u8ba1\u7b97\u6a21\u5f0f\uff0c\u7981\u7528\u4ea4\u706b\u6a21\u5f0f\uff0c\u53ef\u4ee5\u8282\u7701\u4e00\u70b9\u529f\u8017\u3002",
+                    "IsDefault": true
+                }, {
+                    "TargetGpu": 2,
+                    "Name": "-platform 1",
+                    "Segment": "-platform 1",
+                    "Description": "\u53ea\u4f7f\u7528A\u5361",
+                    "IsDefault": false
+                }, {
+                    "TargetGpu": 2,
+                    "Name": "-platform 2",
+                    "Segment": "-platform 2",
+                    "Description": "\u53ea\u4f7f\u7528N\u5361",
+                    "IsDefault": false
+                }
+            ]
+        }, {
+            "Id": "ffd1c4f3-0898-4c31-88dc-79d6fcecf4aa",
+            "CoinId": "6b20450b-5973-40e7-a4c2-93d23cb2a383",
+            "KernelId": "6048d91c-71f7-4d0f-b050-ed474768b753",
+            "SupportedGpu": 2,
+            "IsSupportPool1": false,
+            "DualCoinGroupId": "00000000-0000-0000-0000-000000000000",
+            "Args": "--algo etchash",
+            "IsHot": false,
+            "IsRecommend": false,
+            "SortNumber": 0
+        }
+    ],
+    "FileWriters": [{
+            "Id": "36a1a7e5-07a8-45ee-837a-0bef2e725269",
+            "Name": "\u4e66\u5199Claymore\u7684\u5907\u7528\u77ff\u6c60\u6587\u4ef6",
+            "FileUrl": "epools.txt",
+            "Body": "POOL: {pool1}, WALLET: {wallet1}, WORKER: {worker1}, PSW: x"
+        }, {
+            "Id": "e27220a9-49c0-43c9-9ae5-1fd9b969f65c",
+            "Name": "nanominer\u5185\u6838\u7684config.ini\u6587\u4ef6\u4e66\u5199\u5668",
+            "FileUrl": "config.ini",
+            "Body": "coin={mainCoin}\r\nwallet={wallet}\r\nrigName={worker}\r\npool1={pool}\r\nlogPath={logfile}"
+        }
+    ],
+    "FragmentWriters": [{
+            "Id": "9d7ea7d8-e6df-4977-9dde-502e7884ad53",
+            "Name": "NBMiner\u5907\u7528\u77ff\u6c60\u4e66\u5199\u5668",
+            "Body": "-o1 {pool1} -u1 {wallet1}.{worker1}:x"
+        }
+    ],
+    "PoolKernels": [{
+            "Id": "ea189816-8e27-4b6d-896a-ca97a36b3b1d",
+            "PoolId": "07dc30ba-091a-4b51-9a7e-f7b76ebbbe2d",
+            "KernelId": "928aeebb-dfa7-49b0-93a5-80f77d88e92d",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "234bea0b-45d2-4343-9311-1fd603cffd60",
+            "PoolId": "07dc30ba-091a-4b51-9a7e-f7b76ebbbe2d",
+            "KernelId": "eb24f21b-687f-4122-b935-37c11afa266e",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "642d7053-3c35-4909-94b1-bf0849d570da",
+            "PoolId": "07dc30ba-091a-4b51-9a7e-f7b76ebbbe2d",
+            "KernelId": "391fdfbd-860a-47ac-8c0b-d0fecfb0547f",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "b7b362a1-cebe-4518-bedb-84e94bef80e2",
+            "PoolId": "0d8eb673-56a3-4d18-921c-671fe7f49ff2",
+            "KernelId": "928aeebb-dfa7-49b0-93a5-80f77d88e92d",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "49bd8059-ecd6-4092-b350-7c34550303cc",
+            "PoolId": "0d8eb673-56a3-4d18-921c-671fe7f49ff2",
+            "KernelId": "eb24f21b-687f-4122-b935-37c11afa266e",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "9467d1db-1b41-47e2-a473-d4b8fc871030",
+            "PoolId": "0d8eb673-56a3-4d18-921c-671fe7f49ff2",
+            "KernelId": "37b75fcd-bf34-4b67-90f7-0e003ac92721",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "ed4375aa-6aee-4060-91ac-38581accabcd",
+            "PoolId": "0d8eb673-56a3-4d18-921c-671fe7f49ff2",
+            "KernelId": "391fdfbd-860a-47ac-8c0b-d0fecfb0547f",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "15a4dc8e-791f-419d-96e2-1d41100ab24b",
+            "PoolId": "0d8eb673-56a3-4d18-921c-671fe7f49ff2",
+            "KernelId": "9b263828-82f0-490b-8510-4591371a019f",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "86de99c1-b3dd-4bf1-aa8d-f404065335af",
+            "PoolId": "0d8eb673-56a3-4d18-921c-671fe7f49ff2",
+            "KernelId": "e6ef79ae-52ab-47e5-98b0-93f8539fcedc",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "2a7ff994-812b-4d46-9d35-2487e8cc73a3",
+            "PoolId": "0d8eb673-56a3-4d18-921c-671fe7f49ff2",
+            "KernelId": "be088b6a-9e54-42dd-9773-c6f8a730bb59",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "ffe926d9-2624-4b11-bff5-7103b103075c",
+            "PoolId": "1785c101-b51c-4b74-91f1-518197917afd",
+            "KernelId": "928aeebb-dfa7-49b0-93a5-80f77d88e92d",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "fd1624a8-c2c6-4943-8bf4-9d17b4ab0370",
+            "PoolId": "1785c101-b51c-4b74-91f1-518197917afd",
+            "KernelId": "eb24f21b-687f-4122-b935-37c11afa266e",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "0efc304d-0afe-4907-a01b-84197913f0e2",
+            "PoolId": "1785c101-b51c-4b74-91f1-518197917afd",
+            "KernelId": "391fdfbd-860a-47ac-8c0b-d0fecfb0547f",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "d91b6c1a-80d4-4e75-a46c-a24c0a6ca48f",
+            "PoolId": "27e9bc02-7a96-45a9-82f9-8cc9e3017f20",
+            "KernelId": "928aeebb-dfa7-49b0-93a5-80f77d88e92d",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "390c1b16-c166-4180-95cd-727e8eb56b5c",
+            "PoolId": "27e9bc02-7a96-45a9-82f9-8cc9e3017f20",
+            "KernelId": "eb24f21b-687f-4122-b935-37c11afa266e",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "dd6cd6ab-9df0-4b6a-ac81-9c70423b4ff6",
+            "PoolId": "27e9bc02-7a96-45a9-82f9-8cc9e3017f20",
+            "KernelId": "391fdfbd-860a-47ac-8c0b-d0fecfb0547f",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "34095c2c-00b5-43af-afa1-e76f73cd3cad",
+            "PoolId": "2af69e41-e8b1-4556-ad2e-55788f41262f",
+            "KernelId": "928aeebb-dfa7-49b0-93a5-80f77d88e92d",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "c8d2816e-86ef-422f-884b-87167d49a467",
+            "PoolId": "2af69e41-e8b1-4556-ad2e-55788f41262f",
+            "KernelId": "eb24f21b-687f-4122-b935-37c11afa266e",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "309625db-f6ee-4543-9272-6a8453effef3",
+            "PoolId": "2af69e41-e8b1-4556-ad2e-55788f41262f",
+            "KernelId": "391fdfbd-860a-47ac-8c0b-d0fecfb0547f",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "498c1bab-541f-4c1b-8ec2-1a873fd66071",
+            "PoolId": "3076e5b2-22f8-4525-ab95-b67bb7fe221b",
+            "KernelId": "928aeebb-dfa7-49b0-93a5-80f77d88e92d",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "a87499ae-27b1-4a23-8bdd-d27672890a04",
+            "PoolId": "3076e5b2-22f8-4525-ab95-b67bb7fe221b",
+            "KernelId": "eb24f21b-687f-4122-b935-37c11afa266e",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "2e35b40d-a122-4718-aa70-1da3443c7122",
+            "PoolId": "3076e5b2-22f8-4525-ab95-b67bb7fe221b",
+            "KernelId": "37b75fcd-bf34-4b67-90f7-0e003ac92721",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "510bfa49-6e82-4674-baad-27439a2217e7",
+            "PoolId": "3076e5b2-22f8-4525-ab95-b67bb7fe221b",
+            "KernelId": "391fdfbd-860a-47ac-8c0b-d0fecfb0547f",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "56a9b6d7-5f3f-44c6-95d9-99c96586267c",
+            "PoolId": "3076e5b2-22f8-4525-ab95-b67bb7fe221b",
+            "KernelId": "9b263828-82f0-490b-8510-4591371a019f",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "a3ca8ba4-d7fe-42aa-b6aa-485e763a5c82",
+            "PoolId": "3076e5b2-22f8-4525-ab95-b67bb7fe221b",
+            "KernelId": "e6ef79ae-52ab-47e5-98b0-93f8539fcedc",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "afd828e9-b35e-49cb-a5fd-5462bdced4c1",
+            "PoolId": "3076e5b2-22f8-4525-ab95-b67bb7fe221b",
+            "KernelId": "be088b6a-9e54-42dd-9773-c6f8a730bb59",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "230c3b70-2b16-4096-a23f-c4e496ce1042",
+            "PoolId": "4ca1bc4f-7780-4900-8f30-87e612ca58af",
+            "KernelId": "928aeebb-dfa7-49b0-93a5-80f77d88e92d",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "d96044f3-1dd6-4b06-b6d2-ad9b5839bc68",
+            "PoolId": "4ca1bc4f-7780-4900-8f30-87e612ca58af",
+            "KernelId": "eb24f21b-687f-4122-b935-37c11afa266e",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "1012fd04-e218-4080-9d3c-6c84e5de3302",
+            "PoolId": "4ca1bc4f-7780-4900-8f30-87e612ca58af",
+            "KernelId": "37b75fcd-bf34-4b67-90f7-0e003ac92721",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "9a83d785-881f-4fc2-9b15-d01130e19cee",
+            "PoolId": "4ca1bc4f-7780-4900-8f30-87e612ca58af",
+            "KernelId": "391fdfbd-860a-47ac-8c0b-d0fecfb0547f",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "d9f343cf-8691-40a2-8a05-d2ffaba575c5",
+            "PoolId": "4ca1bc4f-7780-4900-8f30-87e612ca58af",
+            "KernelId": "9b263828-82f0-490b-8510-4591371a019f",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "ce1da39c-8d5b-4fd0-9958-2dbd678c36ef",
+            "PoolId": "4ca1bc4f-7780-4900-8f30-87e612ca58af",
+            "KernelId": "e6ef79ae-52ab-47e5-98b0-93f8539fcedc",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "64fa11b6-93fc-4b42-9769-21cd85867e94",
+            "PoolId": "4ca1bc4f-7780-4900-8f30-87e612ca58af",
+            "KernelId": "be088b6a-9e54-42dd-9773-c6f8a730bb59",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "3b370351-6d62-4ebc-86e8-f4129af7178c",
+            "PoolId": "56b6e758-3cd7-40ba-b5e9-0822c4c87a9b",
+            "KernelId": "928aeebb-dfa7-49b0-93a5-80f77d88e92d",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "f3cb83bb-f937-4fb9-b96a-8368bf42ba7c",
+            "PoolId": "56b6e758-3cd7-40ba-b5e9-0822c4c87a9b",
+            "KernelId": "eb24f21b-687f-4122-b935-37c11afa266e",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "56291b36-8e32-4c7c-b4fe-772ebf27fcaa",
+            "PoolId": "56b6e758-3cd7-40ba-b5e9-0822c4c87a9b",
+            "KernelId": "37b75fcd-bf34-4b67-90f7-0e003ac92721",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "8b9a45b4-c054-477f-8e46-46e411e9926d",
+            "PoolId": "56b6e758-3cd7-40ba-b5e9-0822c4c87a9b",
+            "KernelId": "391fdfbd-860a-47ac-8c0b-d0fecfb0547f",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "1c70b6ca-f16d-4f96-bc1c-40e0d6b1336f",
+            "PoolId": "56b6e758-3cd7-40ba-b5e9-0822c4c87a9b",
+            "KernelId": "9b263828-82f0-490b-8510-4591371a019f",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "97cf4172-eac7-452e-b7b9-d3fcf5f24956",
+            "PoolId": "56b6e758-3cd7-40ba-b5e9-0822c4c87a9b",
+            "KernelId": "e6ef79ae-52ab-47e5-98b0-93f8539fcedc",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "04869af5-df30-4ead-8374-3144b8f69306",
+            "PoolId": "56b6e758-3cd7-40ba-b5e9-0822c4c87a9b",
+            "KernelId": "be088b6a-9e54-42dd-9773-c6f8a730bb59",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "a72d9db1-9f7f-4b76-80eb-2b7c0c197efa",
+            "PoolId": "5c8c3ec4-cb8d-45bf-aceb-4ee421f5cbd5",
+            "KernelId": "928aeebb-dfa7-49b0-93a5-80f77d88e92d",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "6c6bd62b-21fd-4579-9918-03f3bf092362",
+            "PoolId": "5c8c3ec4-cb8d-45bf-aceb-4ee421f5cbd5",
+            "KernelId": "eb24f21b-687f-4122-b935-37c11afa266e",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "6f464383-677b-4002-a469-e1d2168c9416",
+            "PoolId": "5c8c3ec4-cb8d-45bf-aceb-4ee421f5cbd5",
+            "KernelId": "391fdfbd-860a-47ac-8c0b-d0fecfb0547f",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "8e1eae0b-985b-4f6a-9eab-66c6e928d540",
+            "PoolId": "7de8ede3-839b-42b5-99aa-45485c15a7b3",
+            "KernelId": "928aeebb-dfa7-49b0-93a5-80f77d88e92d",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "3a0db8c6-e549-4c0d-9153-20aac9e04d64",
+            "PoolId": "7de8ede3-839b-42b5-99aa-45485c15a7b3",
+            "KernelId": "eb24f21b-687f-4122-b935-37c11afa266e",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "caf6bd93-2836-4f12-8467-8cc3dd195f35",
+            "PoolId": "7de8ede3-839b-42b5-99aa-45485c15a7b3",
+            "KernelId": "391fdfbd-860a-47ac-8c0b-d0fecfb0547f",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "cee28ab2-253f-44e3-bdf3-084ce0bb8eac",
+            "PoolId": "890256d4-ef5c-496f-bec4-83a65e7bae2c",
+            "KernelId": "928aeebb-dfa7-49b0-93a5-80f77d88e92d",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "6a4aadde-184f-4c19-a418-e9c6bd9b4cfb",
+            "PoolId": "890256d4-ef5c-496f-bec4-83a65e7bae2c",
+            "KernelId": "eb24f21b-687f-4122-b935-37c11afa266e",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "2e8e05e8-9c53-4041-ad5f-a394b3b51121",
+            "PoolId": "890256d4-ef5c-496f-bec4-83a65e7bae2c",
+            "KernelId": "37b75fcd-bf34-4b67-90f7-0e003ac92721",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "673f7fcd-e4dc-4814-897d-b41ce929f667",
+            "PoolId": "890256d4-ef5c-496f-bec4-83a65e7bae2c",
+            "KernelId": "391fdfbd-860a-47ac-8c0b-d0fecfb0547f",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "552bd644-6e49-4b2f-ad9a-e66d20d5c3ce",
+            "PoolId": "890256d4-ef5c-496f-bec4-83a65e7bae2c",
+            "KernelId": "9b263828-82f0-490b-8510-4591371a019f",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "9bcdec82-94d5-4cf2-8b6e-8ff57a93b13c",
+            "PoolId": "890256d4-ef5c-496f-bec4-83a65e7bae2c",
+            "KernelId": "e6ef79ae-52ab-47e5-98b0-93f8539fcedc",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "6d26da1f-fa91-4ad2-ab1c-5dfc9dd97b1c",
+            "PoolId": "890256d4-ef5c-496f-bec4-83a65e7bae2c",
+            "KernelId": "be088b6a-9e54-42dd-9773-c6f8a730bb59",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "51fef8a9-180b-4868-9024-1ee3204adca1",
+            "PoolId": "c760a498-473f-4b85-afbb-f0da96e2b968",
+            "KernelId": "928aeebb-dfa7-49b0-93a5-80f77d88e92d",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "507961ac-8181-46b7-818a-7075dd78e975",
+            "PoolId": "c760a498-473f-4b85-afbb-f0da96e2b968",
+            "KernelId": "eb24f21b-687f-4122-b935-37c11afa266e",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "76831472-554e-4aca-95d1-08ea12b8dab2",
+            "PoolId": "c760a498-473f-4b85-afbb-f0da96e2b968",
+            "KernelId": "37b75fcd-bf34-4b67-90f7-0e003ac92721",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "272326f9-d5e2-4303-8551-2194da65c63a",
+            "PoolId": "c760a498-473f-4b85-afbb-f0da96e2b968",
+            "KernelId": "391fdfbd-860a-47ac-8c0b-d0fecfb0547f",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "edf043a1-dcc4-475c-b068-2c897d59b8ec",
+            "PoolId": "c760a498-473f-4b85-afbb-f0da96e2b968",
+            "KernelId": "9b263828-82f0-490b-8510-4591371a019f",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "4bad5aea-1a1b-4950-b0e9-0e8f56e659f6",
+            "PoolId": "c760a498-473f-4b85-afbb-f0da96e2b968",
+            "KernelId": "e6ef79ae-52ab-47e5-98b0-93f8539fcedc",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "4f6b63d6-187e-4d8a-ab88-413c9c5fdc86",
+            "PoolId": "c760a498-473f-4b85-afbb-f0da96e2b968",
+            "KernelId": "be088b6a-9e54-42dd-9773-c6f8a730bb59",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "32f535c7-9aa5-4028-8758-692c0280a369",
+            "PoolId": "c8fd517e-c5e9-485d-8778-2de4c875d1e6",
+            "KernelId": "928aeebb-dfa7-49b0-93a5-80f77d88e92d",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "baca16c6-35d0-4a03-ad34-e51bfb57594a",
+            "PoolId": "c8fd517e-c5e9-485d-8778-2de4c875d1e6",
+            "KernelId": "eb24f21b-687f-4122-b935-37c11afa266e",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "dddc7c65-cf72-4b95-a707-3870bb23fbfc",
+            "PoolId": "c8fd517e-c5e9-485d-8778-2de4c875d1e6",
+            "KernelId": "37b75fcd-bf34-4b67-90f7-0e003ac92721",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "d3ea69bc-8381-44b2-b120-9d836d6ecdad",
+            "PoolId": "c8fd517e-c5e9-485d-8778-2de4c875d1e6",
+            "KernelId": "391fdfbd-860a-47ac-8c0b-d0fecfb0547f",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "d1bdc16e-58f5-4631-be64-ca977c3f052e",
+            "PoolId": "c8fd517e-c5e9-485d-8778-2de4c875d1e6",
+            "KernelId": "9b263828-82f0-490b-8510-4591371a019f",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "ee90d22a-23eb-4226-9dba-c898a1cd564c",
+            "PoolId": "c8fd517e-c5e9-485d-8778-2de4c875d1e6",
+            "KernelId": "e6ef79ae-52ab-47e5-98b0-93f8539fcedc",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "f7a1f23f-de05-48bd-8a9d-ed1320bd1c91",
+            "PoolId": "c8fd517e-c5e9-485d-8778-2de4c875d1e6",
+            "KernelId": "be088b6a-9e54-42dd-9773-c6f8a730bb59",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "876fb4e9-e424-40c3-be3a-e9f4a648e45a",
+            "PoolId": "cd58ec98-cc5f-4c49-8894-5134971bf58d",
+            "KernelId": "928aeebb-dfa7-49b0-93a5-80f77d88e92d",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "78f3d484-5a04-40a8-95d9-0d04e1fb3672",
+            "PoolId": "cd58ec98-cc5f-4c49-8894-5134971bf58d",
+            "KernelId": "eb24f21b-687f-4122-b935-37c11afa266e",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "9e711842-c4fe-48cd-adb1-153e968214e2",
+            "PoolId": "cd58ec98-cc5f-4c49-8894-5134971bf58d",
+            "KernelId": "37b75fcd-bf34-4b67-90f7-0e003ac92721",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "dcbceb3d-9af8-4c72-9cc4-ffc8582c9e3a",
+            "PoolId": "cd58ec98-cc5f-4c49-8894-5134971bf58d",
+            "KernelId": "391fdfbd-860a-47ac-8c0b-d0fecfb0547f",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "f88b5030-2897-4a1c-8083-f85a2b5cd7bb",
+            "PoolId": "cd58ec98-cc5f-4c49-8894-5134971bf58d",
+            "KernelId": "9b263828-82f0-490b-8510-4591371a019f",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "1c878bb6-1ce3-4aad-8b67-512f2690aca6",
+            "PoolId": "cd58ec98-cc5f-4c49-8894-5134971bf58d",
+            "KernelId": "e6ef79ae-52ab-47e5-98b0-93f8539fcedc",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "877a3cdb-58e4-4e47-97b2-69be0492ac64",
+            "PoolId": "cd58ec98-cc5f-4c49-8894-5134971bf58d",
+            "KernelId": "be088b6a-9e54-42dd-9773-c6f8a730bb59",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "16ec9a6f-1d95-48ce-8318-fecef432ec5e",
+            "PoolId": "d7634b60-48d7-48b1-b5b2-75bfa6d4a3de",
+            "KernelId": "928aeebb-dfa7-49b0-93a5-80f77d88e92d",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "211d0bad-e869-4ae2-8391-77148d972394",
+            "PoolId": "d7634b60-48d7-48b1-b5b2-75bfa6d4a3de",
+            "KernelId": "eb24f21b-687f-4122-b935-37c11afa266e",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "4a57c24c-155d-42d4-ab33-4941e5b2093e",
+            "PoolId": "d7634b60-48d7-48b1-b5b2-75bfa6d4a3de",
+            "KernelId": "37b75fcd-bf34-4b67-90f7-0e003ac92721",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "afe886fc-e681-455a-a385-661a8c34566f",
+            "PoolId": "d7634b60-48d7-48b1-b5b2-75bfa6d4a3de",
+            "KernelId": "391fdfbd-860a-47ac-8c0b-d0fecfb0547f",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "c0f569cb-3ddb-4d80-adf4-e28e7da01ae4",
+            "PoolId": "d7634b60-48d7-48b1-b5b2-75bfa6d4a3de",
+            "KernelId": "9b263828-82f0-490b-8510-4591371a019f",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "cc8efebe-7496-4297-8d63-625c5ec89292",
+            "PoolId": "d7634b60-48d7-48b1-b5b2-75bfa6d4a3de",
+            "KernelId": "e6ef79ae-52ab-47e5-98b0-93f8539fcedc",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "60b3cca5-2576-460f-a9a3-ca5a2b2fd919",
+            "PoolId": "d7634b60-48d7-48b1-b5b2-75bfa6d4a3de",
+            "KernelId": "be088b6a-9e54-42dd-9773-c6f8a730bb59",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "8c534a17-c1cf-461a-a816-d3307ff487f0",
+            "PoolId": "de000a72-cb1f-499a-ac83-cbd9e8c848dc",
+            "KernelId": "928aeebb-dfa7-49b0-93a5-80f77d88e92d",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "39413896-c780-42f9-895d-5106cf23b9db",
+            "PoolId": "de000a72-cb1f-499a-ac83-cbd9e8c848dc",
+            "KernelId": "eb24f21b-687f-4122-b935-37c11afa266e",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "24e46b32-bfc5-45cb-9a3a-9139de60f95d",
+            "PoolId": "de000a72-cb1f-499a-ac83-cbd9e8c848dc",
+            "KernelId": "37b75fcd-bf34-4b67-90f7-0e003ac92721",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "c802f329-ade8-4e22-8a6d-802c602ada98",
+            "PoolId": "de000a72-cb1f-499a-ac83-cbd9e8c848dc",
+            "KernelId": "391fdfbd-860a-47ac-8c0b-d0fecfb0547f",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "da729e6d-10c0-4e32-abf3-8bd69a9a9def",
+            "PoolId": "de000a72-cb1f-499a-ac83-cbd9e8c848dc",
+            "KernelId": "9b263828-82f0-490b-8510-4591371a019f",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "21d687c1-d160-425a-8216-9176ad14bf16",
+            "PoolId": "de000a72-cb1f-499a-ac83-cbd9e8c848dc",
+            "KernelId": "e6ef79ae-52ab-47e5-98b0-93f8539fcedc",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "02164bcf-9594-4a2d-ae12-c08bdb1f0b1a",
+            "PoolId": "de000a72-cb1f-499a-ac83-cbd9e8c848dc",
+            "KernelId": "be088b6a-9e54-42dd-9773-c6f8a730bb59",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "8dcb6f6d-031d-4b2b-a536-16ea67f8d7d1",
+            "PoolId": "e1eb8e11-ac1b-4093-a707-795f31c1230b",
+            "KernelId": "928aeebb-dfa7-49b0-93a5-80f77d88e92d",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "089887d2-9c1a-41ff-a679-b051143532ae",
+            "PoolId": "e1eb8e11-ac1b-4093-a707-795f31c1230b",
+            "KernelId": "eb24f21b-687f-4122-b935-37c11afa266e",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "e6844254-02fd-41af-a4d8-8f0ed587efa7",
+            "PoolId": "e1eb8e11-ac1b-4093-a707-795f31c1230b",
+            "KernelId": "37b75fcd-bf34-4b67-90f7-0e003ac92721",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "047fd4e1-00ec-41b3-8fd6-2edf0d2b8ed0",
+            "PoolId": "e1eb8e11-ac1b-4093-a707-795f31c1230b",
+            "KernelId": "391fdfbd-860a-47ac-8c0b-d0fecfb0547f",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "622cd618-7343-48ce-88f4-4eef7c805dd0",
+            "PoolId": "e1eb8e11-ac1b-4093-a707-795f31c1230b",
+            "KernelId": "9b263828-82f0-490b-8510-4591371a019f",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "683fdf0e-53a9-43d8-a87e-7feae65ab955",
+            "PoolId": "e1eb8e11-ac1b-4093-a707-795f31c1230b",
+            "KernelId": "e6ef79ae-52ab-47e5-98b0-93f8539fcedc",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "728be81d-bf6a-48d9-95d5-efbe6bb358f7",
+            "PoolId": "e1eb8e11-ac1b-4093-a707-795f31c1230b",
+            "KernelId": "be088b6a-9e54-42dd-9773-c6f8a730bb59",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "3212da7a-12c1-422c-99bc-d3548e32f79b",
+            "PoolId": "e4d51f57-f4a1-42f0-9e3b-c74d859b3497",
+            "KernelId": "928aeebb-dfa7-49b0-93a5-80f77d88e92d",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "76500759-4436-4e1c-ae2a-b2aabb229bef",
+            "PoolId": "e4d51f57-f4a1-42f0-9e3b-c74d859b3497",
+            "KernelId": "eb24f21b-687f-4122-b935-37c11afa266e",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "1cc6d3cc-e92c-4371-9325-9da2307726f5",
+            "PoolId": "e4d51f57-f4a1-42f0-9e3b-c74d859b3497",
+            "KernelId": "37b75fcd-bf34-4b67-90f7-0e003ac92721",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "75ae0757-a221-49fa-bfca-70afd29f81e0",
+            "PoolId": "e4d51f57-f4a1-42f0-9e3b-c74d859b3497",
+            "KernelId": "391fdfbd-860a-47ac-8c0b-d0fecfb0547f",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "c8454253-db4d-4518-9dcf-afd2500ce4e5",
+            "PoolId": "e4d51f57-f4a1-42f0-9e3b-c74d859b3497",
+            "KernelId": "9b263828-82f0-490b-8510-4591371a019f",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "7181707b-01a2-4115-9ce4-0457ce89180a",
+            "PoolId": "e4d51f57-f4a1-42f0-9e3b-c74d859b3497",
+            "KernelId": "e6ef79ae-52ab-47e5-98b0-93f8539fcedc",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "ee8da90d-3d62-4016-a106-1082f4274426",
+            "PoolId": "e4d51f57-f4a1-42f0-9e3b-c74d859b3497",
+            "KernelId": "be088b6a-9e54-42dd-9773-c6f8a730bb59",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "debeed0b-59c0-499a-843d-23920e40768f",
+            "PoolId": "ed1f3807-b12d-4464-94aa-f371671fe455",
+            "KernelId": "928aeebb-dfa7-49b0-93a5-80f77d88e92d",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "96018643-48ee-4cbf-a0c9-24bfc1ce05a8",
+            "PoolId": "ed1f3807-b12d-4464-94aa-f371671fe455",
+            "KernelId": "eb24f21b-687f-4122-b935-37c11afa266e",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "2b013b72-5721-4f2f-87c8-3384e27aceb7",
+            "PoolId": "ed1f3807-b12d-4464-94aa-f371671fe455",
+            "KernelId": "391fdfbd-860a-47ac-8c0b-d0fecfb0547f",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "14dd1cb5-8a6e-4ccf-a282-d2d02cec2178",
+            "PoolId": "f8f9e420-c659-4988-8d22-7d91d3d36b08",
+            "KernelId": "928aeebb-dfa7-49b0-93a5-80f77d88e92d",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "b1aec3f2-a671-45db-b8d4-5f4fc839896e",
+            "PoolId": "f8f9e420-c659-4988-8d22-7d91d3d36b08",
+            "KernelId": "eb24f21b-687f-4122-b935-37c11afa266e",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "598367b7-6519-462c-90d6-fb1f331936a1",
+            "PoolId": "f8f9e420-c659-4988-8d22-7d91d3d36b08",
+            "KernelId": "37b75fcd-bf34-4b67-90f7-0e003ac92721",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "6fb5acce-cbac-4835-8117-2d847920277a",
+            "PoolId": "f8f9e420-c659-4988-8d22-7d91d3d36b08",
+            "KernelId": "391fdfbd-860a-47ac-8c0b-d0fecfb0547f",
+            "Args": "--ethstratum ETHPROXY"
+        }, {
+            "Id": "1f76612a-c06f-41df-b159-4c2252c0df4a",
+            "PoolId": "f8f9e420-c659-4988-8d22-7d91d3d36b08",
+            "KernelId": "9b263828-82f0-490b-8510-4591371a019f",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "88daae87-c877-4bde-9920-2a86c19bdc0a",
+            "PoolId": "f8f9e420-c659-4988-8d22-7d91d3d36b08",
+            "KernelId": "e6ef79ae-52ab-47e5-98b0-93f8539fcedc",
+            "Args": "-allpools 1"
+        }, {
+            "Id": "b09ebb8c-53da-433a-a8b2-ba14b3be5957",
+            "PoolId": "f8f9e420-c659-4988-8d22-7d91d3d36b08",
+            "KernelId": "be088b6a-9e54-42dd-9773-c6f8a730bb59",
+            "Args": "-allpools 1"
+        }
+    ],
+    "Pools": [
+        {
+            "Id": "5c8c3ec4-cb8d-45bf-aceb-4ee421f5cbd5",
+            "BrandId": "2a1302f7-8aa1-48e5-86ce-d69f221199e9",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "Name": "\u9c7c\u6c60\uff08\u94b1\u5305\u5730\u5740\uff09",
+            "Server": "f2pool1.xxminer.com:8689",
+            "Url": "https://www.f2pool.com/eth/{wallet}",
+            "Website": "https://www.f2pool.com/",
+            "SortNumber": 1,
+            "IsUserMode": false,
+            "Notice": "\u94b1\u5305\u5730\u5740\u586b\u6b63\u5e38\u7684ETH\u94b1\u5305\u5730\u5740\u3002\u94b1\u5305\u5730\u5740\u6a21\u5f0f\u548c\u7528\u6237\u540d\u6a21\u5f0f\u7684\u6536\u76ca\u5206\u914d\u6a21\u5f0f\u90fd\u662fPPS+\u3002eth.f2pool.com",
+            "TutorialUrl": "https://blog.f2pool.com/zh/mining-tutorial/eth",
+            "NoPool1": false,
+            "NotPool1": false
+        },
+        {
+            "Id": "890256d4-ef5c-496f-bec4-83a65e7bae2c",
+            "BrandId": "18ddc5d2-c91b-4d54-94b8-d67e54bf26a5",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "Name": "\u5e01\u5370\u77ff\u6c60",
+            "Server": "poolin1.xxminer.com:8589",
+            "Url": "https://www.poolin.com/my/{userName}/eth/dashboard",
+            "Website": "https://www.poolin.com/",
+            "SortNumber": 38,
+            "IsUserMode": true,
+            "UserName": "ntminer",
+            "Password": "123",
+            "Notice": "\u4e3b\u6c60\u8d26\u6237\u586b\u5199\u60a8\u5728\u5e01\u5370\u7684\u5b50\u8d26\u6237\u3002eth.ss.poolin.com",
+            "NoPool1": true,
+            "NotPool1": true
+        },
+        {
+            "Id": "ed1f3807-b12d-4464-94aa-f371671fe455",
+            "BrandId": "0bed32aa-ecd6-4264-84fa-a4dea5dfd969",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "Name": "ethermine\u4e9a\u6d321",
+            "Server": "etherminer1.xxminer.com:8789",
+            "Url": "https://ethermine.org/miners/{wallet}/dashboard",
+            "Website": "https://ethermine.org/",
+            "SortNumber": 12,
+            "IsUserMode": false,
+            "Notice": "asia1.ethermine.org",
+            "NoPool1": false,
+            "NotPool1": false
+        },
+        {
+            "Id": "5c8c3ec4-cb8d-45bf-aceb-4ee421f5cbd6",
+            "BrandId": "2a1302f7-8aa1-48e5-86ce-d69f221199e9",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "Name": "\u9c7c\u6c60\uff08\u94b1\u5305\u5730\u5740\uff09\u5907\u7528",
+            "Server": "f2pool2.xxminer.com:8699",
+            "Url": "https://www.f2pool.com/eth/{wallet}",
+            "Website": "https://www.f2pool.com/",
+            "SortNumber": 1,
+            "IsUserMode": false,
+            "Notice": "\u94b1\u5305\u5730\u5740\u586b\u6b63\u5e38\u7684ETH\u94b1\u5305\u5730\u5740\u3002\u94b1\u5305\u5730\u5740\u6a21\u5f0f\u548c\u7528\u6237\u540d\u6a21\u5f0f\u7684\u6536\u76ca\u5206\u914d\u6a21\u5f0f\u90fd\u662fPPS+\u3002eth.f2pool.com",
+            "TutorialUrl": "https://blog.f2pool.com/zh/mining-tutorial/eth",
+            "NoPool1": false,
+            "NotPool1": false
+        },
+        {
+            "Id": "890256d4-ef5c-496f-bec4-83a65e7bae2d",
+            "BrandId": "18ddc5d2-c91b-4d54-94b8-d67e54bf26a5",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "Name": "\u5e01\u5370\u77ff\u6c60\u5907\u7528",
+            "Server": "poolin2.xxminer.com:8599",
+            "Url": "https://www.poolin.com/my/{userName}/eth/dashboard",
+            "Website": "https://www.poolin.com/",
+            "SortNumber": 38,
+            "IsUserMode": true,
+            "UserName": "ntminer",
+            "Password": "123",
+            "Notice": "\u4e3b\u6c60\u8d26\u6237\u586b\u5199\u60a8\u5728\u5e01\u5370\u7684\u5b50\u8d26\u6237\u3002eth.ss.poolin.com",
+            "NoPool1": true,
+            "NotPool1": true
+        },
+        {
+            "Id": "ed1f3807-b12d-4464-94aa-f371671fe456",
+            "BrandId": "0bed32aa-ecd6-4264-84fa-a4dea5dfd969",
+            "CoinId": "2ee3c3ec-836a-4ba9-b70f-645d42f55fff",
+            "Name": "ethermine\u4e9a\u6d321\u5907\u7528",
+            "Server": "etherminer2.xxminer.com:8799",
+            "Url": "https://ethermine.org/miners/{wallet}/dashboard",
+            "Website": "https://ethermine.org/",
+            "SortNumber": 12,
+            "IsUserMode": false,
+            "Notice": "asia2.ethermine.org",
+            "NoPool1": false,
+            "NotPool1": false
+        }
+
+    ],
+    "SysDics": [{
+            "Id": "14b374b4-0bcf-495d-b269-4cfe4cd3f087",
+            "Code": "Algo",
+            "Name": "\u7b97\u6cd5",
+            "SortNumber": 5
+        }, {
+            "Id": "8e18e55d-001c-4fb3-bc4d-56aa466405f8",
+            "Code": "CudaVersion",
+            "Name": "CUDA\u7248\u672c",
+            "Description": "\u5b57\u5178\u9879\u4e2d\u7684\u503c\u662f\u7248\u672c\u8fb9\u754c>=",
+            "SortNumber": 4
+        }, {
+            "Id": "c79cb64c-6255-43ed-88c7-4b1680a8547d",
+            "Code": "KernelBrand",
+            "Name": "\u5185\u6838\u54c1\u724c",
+            "SortNumber": 1
+        }, {
+            "Id": "d0354f3c-a131-416d-8a16-d958dfa82872",
+            "Code": "ThisSystem",
+            "Name": "\u672c\u7cfb\u7d71",
+            "SortNumber": 0
+        }, {
+            "Id": "e0367a2a-669c-4fa4-90b0-ddb2734bd8a4",
+            "Code": "Tool",
+            "Name": "\u5de5\u5177",
+            "SortNumber": 6
+        }, {
+            "Id": "fcdf4366-f23b-4a94-a4c9-7fdbaea11c59",
+            "Code": "PoolBrand",
+            "Name": "\u77ff\u6c60\u54c1\u724c",
+            "SortNumber": 2
+        }
+    ],
+    "SysDicItems": [{
+            "Id": "005b0ab4-5857-4c0c-a032-21245153e51b",
+            "DicId": "8e18e55d-001c-4fb3-bc4d-56aa466405f8",
+            "Code": "CUDA 11.1",
+            "Value": "456.38",
+            "Description": "CUDA 11.1 GA",
+            "SortNumber": 12
+        }, {
+            "Id": "061c00c5-f40a-4ddc-a61c-730ad18df625",
+            "DicId": "d0354f3c-a131-416d-8a16-d958dfa82872",
+            "Code": "NvidiaDriverWin7",
+            "Value": "https://www.geforce.cn/drivers/results/137752",
+            "Description": "399.24_win7",
+            "SortNumber": 13
+        }, {
+            "Id": "0bed32aa-ecd6-4264-84fa-a4dea5dfd969",
+            "DicId": "fcdf4366-f23b-4a94-a4c9-7fdbaea11c59",
+            "Code": "Other",
+            "Value": "\u5176\u5b83",
+            "SortNumber": 100
+        }, {
+            "Id": "179b6892-29cb-4dd8-a9ea-24f2a726604b",
+            "DicId": "14b374b4-0bcf-495d-b269-4cfe4cd3f087",
+            "Code": "ethash",
+            "Value": "ethash",
+            "SortNumber": 1
+        }, {
+            "Id": "18ddc5d2-c91b-4d54-94b8-d67e54bf26a5",
+            "DicId": "fcdf4366-f23b-4a94-a4c9-7fdbaea11c59",
+            "Code": "poolin",
+            "Value": "\u5e01\u5370",
+            "SortNumber": 13
+        }, {
+            "Id": "190ce647-720f-42f0-93c5-0c5b37b5c98f",
+            "DicId": "c79cb64c-6255-43ed-88c7-4b1680a8547d",
+            "Code": "t-rex",
+            "Value": "t-rex",
+            "Description": "https://github.com/trexminer/T-Rex/releases",
+            "SortNumber": 11
+        }, {
+            "Id": "1f480b99-71b3-46b0-9645-36682aee744b",
+            "DicId": "d0354f3c-a131-416d-8a16-d958dfa82872",
+            "Code": "AppMinerIntro",
+            "Value": "\u5f00\u6e90\u3001\u5f00\u653e\u3001\u5b89\u5168\u3001\u4e13\u4e1a\u3001\u66f4\u9ad8\u6536\u76ca\u3002QQ\u7fa4453663935",
+            "SortNumber": 2
+        }, {
+            "Id": "1f59e9f1-2304-44c2-885c-5984180128d6",
+            "DicId": "8e18e55d-001c-4fb3-bc4d-56aa466405f8",
+            "Code": "CUDA 9.0",
+            "Value": "385.54",
+            "Description": "CUDA 9.0 (9.0.76)",
+            "SortNumber": 6
+        }, {
+            "Id": "23649f60-6f42-4193-8b3e-4ce3dca8757d",
+            "DicId": "c79cb64c-6255-43ed-88c7-4b1680a8547d",
+            "Code": "BMiner",
+            "Value": "BMiner",
+            "Description": "https://bminer.me/releases/",
+            "SortNumber": 2
+        }, {
+            "Id": "29f6d03c-7dd9-4181-bacf-57c083c7fe33",
+            "DicId": "c79cb64c-6255-43ed-88c7-4b1680a8547d",
+            "Code": "Claymore",
+            "Value": "Claymore",
+            "Description": "https://mega.nz/#F!O4YA2JgD!n2b4iSHQDruEsYUvTQP5_w",
+            "SortNumber": 1
+        }, {
+            "Id": "2a1302f7-8aa1-48e5-86ce-d69f221199e9",
+            "DicId": "fcdf4366-f23b-4a94-a4c9-7fdbaea11c59",
+            "Code": "f2pool",
+            "Value": "\u9c7c\u6c60",
+            "SortNumber": 1
+        }, {
+            "Id": "2b8e2400-6fab-4e58-9be1-672f5943c057",
+            "DicId": "d0354f3c-a131-416d-8a16-d958dfa82872",
+            "Code": "VisualCpp0",
+            "Value": "https://www.microsoft.com/zh-CN/download/details.aspx?id=48145",
+            "Description": "Visual C++ 2015",
+            "SortNumber": 16
+        }, {
+            "Id": "2ca9d736-e3e5-4d72-9491-72496a9b08ec",
+            "DicId": "8e18e55d-001c-4fb3-bc4d-56aa466405f8",
+            "Code": "CUDA 7.0",
+            "Value": "347.62",
+            "Description": "CUDA 7.0 (7.0.28)",
+            "SortNumber": 11
+        }, {
+            "Id": "2fdaccec-22fc-4f03-af5e-683ead6670e9",
+            "DicId": "d0354f3c-a131-416d-8a16-d958dfa82872",
+            "Code": "QQGroup",
+            "Value": "453663935",
+            "SortNumber": 9
+        }, {
+            "Id": "31cbf356-4244-43ea-977e-a9d21f2c179b",
+            "DicId": "d0354f3c-a131-416d-8a16-d958dfa82872",
+            "Code": "OsVmPerGpu",
+            "Value": "6",
+            "SortNumber": 20
+        }, {
+            "Id": "37c78d79-c682-4e65-85a8-dc20dc82c557",
+            "DicId": "d0354f3c-a131-416d-8a16-d958dfa82872",
+            "Code": "DownloadMinerStudio",
+            "Value": "http://download.ntminer.top/download.html",
+            "SortNumber": 19
+        }, {
+            "Id": "3bfa3c24-0fea-4d8f-95a0-4065e9bf1f72",
+            "DicId": "8e18e55d-001c-4fb3-bc4d-56aa466405f8",
+            "Code": "CUDA 9.2",
+            "Value": "397.44",
+            "Description": "CUDA 9.2 (9.2.88)",
+            "SortNumber": 7
+        }, {
+            "Id": "431b1f65-2e41-4785-bee3-648189f47fa7",
+            "DicId": "8e18e55d-001c-4fb3-bc4d-56aa466405f8",
+            "Code": "CUDA 10.0",
+            "Value": "411.31",
+            "Description": "CUDA 10.0.130",
+            "SortNumber": 3
+        }, {
+            "Id": "445a9c33-d37f-49fd-acf9-42453a18ff5b",
+            "DicId": "14b374b4-0bcf-495d-b269-4cfe4cd3f087",
+            "Code": "trb",
+            "Value": "trb",
+            "SortNumber": 32
+        }, {
+            "Id": "484086c8-6d67-4588-a4fe-c2392be69739",
+            "DicId": "d0354f3c-a131-416d-8a16-d958dfa82872",
+            "Code": "AppMinerName",
+            "Value": "\u5f00\u6e90\u77ff\u5de5",
+            "Description": "\u505a\u6700\u597d\u7684\u77ff\u5de5",
+            "SortNumber": 1
+        }, {
+            "Id": "4d2b3c49-8be6-456e-b087-c558ae16e865",
+            "DicId": "d0354f3c-a131-416d-8a16-d958dfa82872",
+            "Code": "HelpUrl",
+            "Value": "http://dl.ntminer.top",
+            "SortNumber": 5
+        }, {
+            "Id": "504e66c0-52be-408b-81c8-3df0893c197e",
+            "DicId": "8e18e55d-001c-4fb3-bc4d-56aa466405f8",
+            "Code": "CUDA 11.0",
+            "Value": "451.22",
+            "Description": "CUDA 11.0.1 RC",
+            "SortNumber": 13
+        }, {
+            "Id": "512e7bf5-8414-4e34-b09d-cc19eba2d995",
+            "DicId": "c79cb64c-6255-43ed-88c7-4b1680a8547d",
+            "Code": "lolMiner",
+            "Value": "lolMiner",
+            "Description": "https://github.com/Lolliedieb/lolMiner-releases/releases",
+            "SortNumber": 5
+        }, {
+            "Id": "538b637d-66eb-4851-b440-ff7adfe24d65",
+            "DicId": "e0367a2a-669c-4fa4-90b0-ddb2734bd8a4",
+            "Code": "npp",
+            "Value": "https://minerjson.oss-cn-beijing.aliyuncs.com/npp.zip",
+            "SortNumber": 1
+        }, {
+            "Id": "55f4cb2c-4a6a-4668-b0b2-4898e3edbf4c",
+            "DicId": "14b374b4-0bcf-495d-b269-4cfe4cd3f087",
+            "Code": "etchash",
+            "Value": "etchash",
+            "SortNumber": 1
+        }, {
+            "Id": "57efa0d9-cb78-4f1e-93c1-fd4d181dea95",
+            "DicId": "d0354f3c-a131-416d-8a16-d958dfa82872",
+            "Code": "MinNvidiaDriverVersion",
+            "Value": "399.24",
+            "SortNumber": 10
+        }, {
+            "Id": "5f3e6a54-7b98-4ba7-8512-d5118ace13b0",
+            "DicId": "d0354f3c-a131-416d-8a16-d958dfa82872",
+            "Code": "QQGroupJoinUrl",
+            "Value": "https://jq.qq.com/?_wv=1027&k=soKV3Bo5",
+            "SortNumber": 8
+        }, {
+            "Id": "6533b140-04a9-4180-be13-f70a66c47fa8",
+            "DicId": "8e18e55d-001c-4fb3-bc4d-56aa466405f8",
+            "Code": "CUDA 8.0",
+            "Value": "369.30",
+            "Description": "CUDA 8.0 (8.0.44)",
+            "SortNumber": 9
+        }, {
+            "Id": "66819927-3c35-48ff-891f-cf4b39b1e7ab",
+            "DicId": "fcdf4366-f23b-4a94-a4c9-7fdbaea11c59",
+            "Code": "uupool",
+            "Value": "\u53cc\u4f18",
+            "SortNumber": 4
+        }, {
+            "Id": "6876c93f-7d74-4439-a86f-d4dfe944b7f7",
+            "DicId": "c79cb64c-6255-43ed-88c7-4b1680a8547d",
+            "Code": "GMiner",
+            "Value": "GMiner",
+            "Description": "https://github.com/develsoftware/GMinerRelease/releases",
+            "SortNumber": 4
+        }, {
+            "Id": "6d086814-7c5a-452c-bf76-6334808bad20",
+            "DicId": "d0354f3c-a131-416d-8a16-d958dfa82872",
+            "Code": "HomePageUrl",
+            "Value": "http://dl.ntminer.top",
+            "SortNumber": 3
+        }, {
+            "Id": "6f8d5daa-facf-4c76-a90b-b0ce239b698d",
+            "DicId": "fcdf4366-f23b-4a94-a4c9-7fdbaea11c59",
+            "Code": "xnpool",
+            "Value": "\u5c0f\u9e1f",
+            "SortNumber": 7
+        }, {
+            "Id": "70b97359-063c-46ba-99af-24ba56df288c",
+            "DicId": "d0354f3c-a131-416d-8a16-d958dfa82872",
+            "Code": "MinerStudioTutorial",
+            "Value": "https://zhuanlan.zhihu.com/p/137759804",
+            "SortNumber": 18
+        }, {
+            "Id": "754114cf-8555-46e2-b3dd-39406f54e308",
+            "DicId": "c79cb64c-6255-43ed-88c7-4b1680a8547d",
+            "Code": "Other",
+            "Value": "\u5176\u5b83",
+            "SortNumber": 99
+        }, {
+            "Id": "78af4839-6da9-48bc-aba7-00d703f81c83",
+            "DicId": "d0354f3c-a131-416d-8a16-d958dfa82872",
+            "Code": "NvidiaDriverWin10",
+            "Value": "https://www.geforce.cn/drivers/results/137770",
+            "Description": "399.24_win10",
+            "SortNumber": 12
+        }, {
+            "Id": "7ba4b0c9-07dd-4fe1-b927-e5355741aea3",
+            "DicId": "fcdf4366-f23b-4a94-a4c9-7fdbaea11c59",
+            "Code": "666pool",
+            "Value": "\u72ec\u89d2\u517d",
+            "SortNumber": 15
+        }, {
+            "Id": "8e51d656-4f0d-4f0d-9937-e0d021f4bbeb",
+            "DicId": "d0354f3c-a131-416d-8a16-d958dfa82872",
+            "Code": "ShareTutorial",
+            "Value": "https://zhuanlan.zhihu.com/p/161614545",
+            "SortNumber": 7
+        }, {
+            "Id": "9823a9ce-5d5d-4b0d-897d-c85044edf156",
+            "DicId": "8e18e55d-001c-4fb3-bc4d-56aa466405f8",
+            "Code": "CUDA 7.5",
+            "Value": "353.66",
+            "Description": "CUDA 7.5 (7.5.16)",
+            "SortNumber": 10
+        }, {
+            "Id": "99493d56-5848-4b98-9c80-49a21b4b4b73",
+            "DicId": "fcdf4366-f23b-4a94-a4c9-7fdbaea11c59",
+            "Code": "sparkpool",
+            "Value": "\u661f\u706b",
+            "SortNumber": 2
+        }, {
+            "Id": "a666c114-afbc-4c76-bcc1-39ffe68da781",
+            "DicId": "d0354f3c-a131-416d-8a16-d958dfa82872",
+            "Code": "VisualCpp1",
+            "Value": "https://www.microsoft.com/zh-CN/download/details.aspx?id=40784",
+            "Description": "Visual C++ 2013",
+            "SortNumber": 17
+        }, {
+            "Id": "aff2f460-c2ca-4869-abd0-9fc6d955b36f",
+            "DicId": "c79cb64c-6255-43ed-88c7-4b1680a8547d",
+            "Code": "teamredminer",
+            "Value": "teamredminer",
+            "Description": "https://github.com/todxx/teamredminer/releases",
+            "SortNumber": 8
+        }, {
+            "Id": "b463bb50-1dcb-424c-9727-5e082552e4ef",
+            "DicId": "d0354f3c-a131-416d-8a16-d958dfa82872",
+            "Code": "AmdDriverMore",
+            "Value": "https://www.amd.com/zh-hans/support",
+            "Description": "A\u5361\u9a71\u52a8\u4e0b\u8f7d",
+            "SortNumber": 14
+        }, {
+            "Id": "b87d887f-a462-4093-ae64-6e604798a7bd",
+            "DicId": "d0354f3c-a131-416d-8a16-d958dfa82872",
+            "Code": "MinAmdDriverVersion",
+            "Value": "17.10.2",
+            "SortNumber": 11
+        }, {
+            "Id": "bb788119-88d8-459e-a4c2-439013606e85",
+            "DicId": "8e18e55d-001c-4fb3-bc4d-56aa466405f8",
+            "Code": "CUDA 9.1",
+            "Value": "391.29",
+            "Description": "CUDA 9.1 (9.1.85)",
+            "SortNumber": 5
+        }, {
+            "Id": "bfbb917d-0b7a-48ba-a96f-6f38e66c4be5",
+            "DicId": "14b374b4-0bcf-495d-b269-4cfe4cd3f087",
+            "Code": "Autolykos 2",
+            "Value": "Autolykos 2",
+            "SortNumber": 12
+        }, {
+            "Id": "c10d767c-def6-4234-a091-c124e3fb2a6d",
+            "DicId": "d0354f3c-a131-416d-8a16-d958dfa82872",
+            "Code": "NvidiaDriverMore",
+            "Value": "https://www.geforce.cn/drivers",
+            "Description": "\u66f4\u591a",
+            "SortNumber": 15
+        }, {
+            "Id": "c3c458d6-f82a-4a02-98cc-1c670f0d7b77",
+            "DicId": "fcdf4366-f23b-4a94-a4c9-7fdbaea11c59",
+            "Code": "firepool",
+            "Value": "\u706b\u6c60",
+            "SortNumber": 6
+        }, {
+            "Id": "c58dd8f6-b5e9-459a-bad0-eea9cb2d3033",
+            "DicId": "8e18e55d-001c-4fb3-bc4d-56aa466405f8",
+            "Code": "CUDA 10.2",
+            "Value": "441.22",
+            "Description": "CUDA 10.2.89",
+            "SortNumber": 1
+        }, {
+            "Id": "ceab5ad2-7c33-47bf-8ce7-de6d82c06a89",
+            "DicId": "14b374b4-0bcf-495d-b269-4cfe4cd3f087",
+            "Code": "equihash150-5",
+            "Value": "equihash150-5",
+            "SortNumber": 19
+        }, {
+            "Id": "d45bbe1f-a7b0-4869-9426-6a3383cb8892",
+            "DicId": "14b374b4-0bcf-495d-b269-4cfe4cd3f087",
+            "Code": "beamHash",
+            "Value": "beamHash",
+            "SortNumber": 8
+        }, {
+            "Id": "d53f9e6a-459e-4c10-a6c4-7af7cb97b9e9",
+            "DicId": "c79cb64c-6255-43ed-88c7-4b1680a8547d",
+            "Code": "NBMiner",
+            "Value": "NBMiner",
+            "Description": "QQ\u7fa4\uff1a795224121",
+            "SortNumber": 6
+        }, {
+            "Id": "d6ad2cce-a480-4eb1-b8c7-837bf07f3d64",
+            "DicId": "8e18e55d-001c-4fb3-bc4d-56aa466405f8",
+            "Code": "CUDA 10.1",
+            "Value": "418.96",
+            "Description": "CUDA 10.1.105",
+            "SortNumber": 2
+        }, {
+            "Id": "d7b84f93-6a31-4804-86cf-15882924de28",
+            "DicId": "14b374b4-0bcf-495d-b269-4cfe4cd3f087",
+            "Code": "bfc",
+            "Value": "bfc",
+            "SortNumber": 28
+        }, {
+            "Id": "dce06176-1de4-4b1d-b6d9-2445b7afcaf4",
+            "DicId": "d0354f3c-a131-416d-8a16-d958dfa82872",
+            "Code": "BusinessModelUrl",
+            "Value": "https://zhuanlan.zhihu.com/p/161614178",
+            "SortNumber": 4
+        }, {
+            "Id": "deb45110-60a5-40ad-8191-f8cd591a697c",
+            "DicId": "fcdf4366-f23b-4a94-a4c9-7fdbaea11c59",
+            "Code": "hpt",
+            "Value": "\u706b\u5e01",
+            "SortNumber": 12
+        }, {
+            "Id": "eaf50f09-52c6-4155-b0cb-1062782afe73",
+            "DicId": "8e18e55d-001c-4fb3-bc4d-56aa466405f8",
+            "Code": "CUDA 9.2.148",
+            "Value": "398.26",
+            "Description": "CUDA 9.2 (9.2.148 Update 1)",
+            "SortNumber": 4
+        }, {
+            "Id": "eb3966dd-0b56-43f3-8e05-0d12cc33e676",
+            "DicId": "14b374b4-0bcf-495d-b269-4cfe4cd3f087",
+            "Code": "ProgPoW",
+            "Value": "ProgPoW",
+            "SortNumber": 7
+        }, {
+            "Id": "ee359432-5c22-490e-9883-204ffbb4621d",
+            "DicId": "14b374b4-0bcf-495d-b269-4cfe4cd3f087",
+            "Code": "hns",
+            "Value": "hns",
+            "SortNumber": 31
+        }, {
+            "Id": "f108e22c-54e7-47ef-bd34-99857f0f6f4b",
+            "DicId": "14b374b4-0bcf-495d-b269-4cfe4cd3f087",
+            "Code": "kawpow",
+            "Value": "kawpow",
+            "SortNumber": 6
+        }, {
+            "Id": "f2776420-0d04-4fb7-963c-da945b51d4f4",
+            "DicId": "14b374b4-0bcf-495d-b269-4cfe4cd3f087",
+            "Code": "octopus",
+            "Value": "octopus",
+            "SortNumber": 23
+        }, {
+            "Id": "f2d246a3-4bfe-409c-83c6-15d0d9a031c1",
+            "DicId": "8e18e55d-001c-4fb3-bc4d-56aa466405f8",
+            "Code": "CUDA 8.0.61",
+            "Value": "376.51",
+            "Description": "CUDA 8.0 (8.0.61 GA2)",
+            "SortNumber": 8
+        }, {
+            "Id": "f3f26c6e-12bf-40e2-8e2a-56faef54f655",
+            "DicId": "d0354f3c-a131-416d-8a16-d958dfa82872",
+            "Code": "SpeedTutorial",
+            "Value": "https://zhuanlan.zhihu.com/p/161614356",
+            "SortNumber": 6
+        }, {
+            "Id": "f50edc1e-1c71-433c-977f-5ed4b76f629c",
+            "DicId": "14b374b4-0bcf-495d-b269-4cfe4cd3f087",
+            "Code": "equihash96-5",
+            "Value": "equihash96-5",
+            "SortNumber": 17
+        }, {
+            "Id": "f5715fb1-efe2-4f6b-a7ed-450316d41d90",
+            "DicId": "fcdf4366-f23b-4a94-a4c9-7fdbaea11c59",
+            "Code": "zhizhu",
+            "Value": "\u8718\u86db",
+            "SortNumber": 11
+        }, {
+            "Id": "f9629199-04bb-40ac-bbac-fefa9b67aa53",
+            "DicId": "fcdf4366-f23b-4a94-a4c9-7fdbaea11c59",
+            "Code": "beepool",
+            "Value": "\u871c\u8702",
+            "SortNumber": 3
+        }, {
+            "Id": "fabece81-0911-459f-8403-5efc23c81d2a",
+            "DicId": "c79cb64c-6255-43ed-88c7-4b1680a8547d",
+            "Code": "PhoenixMiner",
+            "Value": "PhoenixMiner",
+            "Description": "https://phoenix-miner.github.io/#download",
+            "SortNumber": 10
+        }
+    ]
+}
